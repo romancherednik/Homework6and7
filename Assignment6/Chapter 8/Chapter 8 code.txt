@@ -1,0 +1,1884 @@
+Windows PowerShell
+Copyright (C) Microsoft Corporation. All rights reserved.
+
+Try the new cross-platform PowerShell https://aka.ms/pscore6
+
+PS C:\Users\romanpc> cd dev
+PS C:\Users\romanpc\dev> ls
+
+
+    Directory: C:\Users\romanpc\dev
+
+
+Mode                LastWriteTime         Length Name
+----                -------------         ------ ----
+d-----         9/8/2020  10:21 PM                cfehome
+d-----       10/18/2020   2:59 PM                env
+d-----       10/12/2020   7:56 PM                GitHub
+d-----       10/12/2020   7:58 PM                GitHub - Copy
+d-----       10/18/2020   2:45 PM                GithubBookmarksStuff
+-a----       10/18/2020   2:40 PM        9320687 CIDM6325-master.zip
+-a----       10/18/2020   3:31 PM        2932090 Django-3-by-Example-master.zip
+-a----       10/12/2020   8:00 PM       31648439 GitHub - Assignment 4.5.rar
+
+
+PS C:\Users\romanpc\dev> cd env
+PS C:\Users\romanpc\dev\env> ls
+
+
+    Directory: C:\Users\romanpc\dev\env
+
+
+Mode                LastWriteTime         Length Name
+----                -------------         ------ ----
+d-----       10/18/2020  10:43 PM                env
+
+
+PS C:\Users\romanpc\dev\env> cd env
+PS C:\Users\romanpc\dev\env\env> ls
+
+
+    Directory: C:\Users\romanpc\dev\env\env
+
+
+Mode                LastWriteTime         Length Name
+----                -------------         ------ ----
+d-----       10/18/2020   9:34 PM                bookmarks
+-a----       10/18/2020  10:43 PM       25056012 bookmarks.zip
+
+
+PS C:\Users\romanpc\dev\env\env> python3 -m venv env/myshop
+PS C:\Users\romanpc\dev\env\env> ls
+
+
+    Directory: C:\Users\romanpc\dev\env\env
+
+
+Mode                LastWriteTime         Length Name
+----                -------------         ------ ----
+d-----       10/18/2020   9:34 PM                bookmarks
+-a----       10/18/2020  10:43 PM       25056012 bookmarks.zip
+
+
+PS C:\Users\romanpc\dev\env\env> ls
+
+
+    Directory: C:\Users\romanpc\dev\env\env
+
+
+Mode                LastWriteTime         Length Name
+----                -------------         ------ ----
+d-----       10/18/2020   9:34 PM                bookmarks
+-a----       10/18/2020  10:43 PM       25056012 bookmarks.zip
+
+
+PS C:\Users\romanpc\dev\env\env> Python
+Python 3.8.5 (tags/v3.8.5:580fbb0, Jul 20 2020, 15:57:54) [MSC v.1924 64 bit (AMD64)] on win32
+Type "help", "copyright", "credits" or "license" for more information.
+>>> exit()
+PS C:\Users\romanpc\dev\env\env> ls
+
+
+    Directory: C:\Users\romanpc\dev\env\env
+
+
+Mode                LastWriteTime         Length Name
+----                -------------         ------ ----
+d-----       10/18/2020   9:34 PM                bookmarks
+-a----       10/18/2020  10:43 PM       25056012 bookmarks.zip
+
+
+PS C:\Users\romanpc\dev\env\env> mkdir myshop
+
+
+    Directory: C:\Users\romanpc\dev\env\env
+
+
+Mode                LastWriteTime         Length Name
+----                -------------         ------ ----
+d-----       11/11/2020   4:38 PM                myshop
+
+
+PS C:\Users\romanpc\dev\env\env> ls
+
+
+    Directory: C:\Users\romanpc\dev\env\env
+
+
+Mode                LastWriteTime         Length Name
+----                -------------         ------ ----
+d-----       10/18/2020   9:34 PM                bookmarks
+d-----       11/11/2020   4:38 PM                myshop
+-a----       10/18/2020  10:43 PM       25056012 bookmarks.zip
+
+
+PS C:\Users\romanpc\dev\env\env> cd myshop
+PS C:\Users\romanpc\dev\env\env\myshop> virtualenv .
+created virtual environment CPython3.8.5.final.0-64 in 4040ms
+  creator CPython3Windows(dest=C:\Users\romanpc\Dev\env\env\myshop, clear=False, global=False)
+  seeder FromAppData(download=False, pip=bundle, setuptools=bundle, wheel=bundle, via=copy, app_data_dir=C:\Users\romanpc\AppData\Local\pypa\virtualenv)
+    added seed packages: pip==20.2.3, setuptools==50.3.0, wheel==0.35.1
+  activators BashActivator,BatchActivator,FishActivator,PowerShellActivator,PythonActivator,XonshActivator
+PS C:\Users\romanpc\dev\env\env\myshop> ls
+
+
+    Directory: C:\Users\romanpc\dev\env\env\myshop
+
+
+Mode                LastWriteTime         Length Name
+----                -------------         ------ ----
+d-----       11/11/2020   4:39 PM                Lib
+d-----       11/11/2020   4:39 PM                Scripts
+-a----       11/11/2020   4:39 PM             42 .gitignore
+-a----       11/11/2020   4:39 PM            237 pyvenv.cfg
+
+
+PS C:\Users\romanpc\dev\env\env\myshop> cd ..
+PS C:\Users\romanpc\dev\env\env> ls
+
+
+    Directory: C:\Users\romanpc\dev\env\env
+
+
+Mode                LastWriteTime         Length Name
+----                -------------         ------ ----
+d-----       10/18/2020   9:34 PM                bookmarks
+d-----       11/11/2020   4:39 PM                myshop
+-a----       10/18/2020  10:43 PM       25056012 bookmarks.zip
+
+
+PS C:\Users\romanpc\dev\env\env> cd myshop
+PS C:\Users\romanpc\dev\env\env\myshop> ls
+
+
+    Directory: C:\Users\romanpc\dev\env\env\myshop
+
+
+Mode                LastWriteTime         Length Name
+----                -------------         ------ ----
+d-----       11/11/2020   4:39 PM                Lib
+d-----       11/11/2020   4:39 PM                Scripts
+-a----       11/11/2020   4:39 PM             42 .gitignore
+-a----       11/11/2020   4:39 PM            237 pyvenv.cfg
+
+
+PS C:\Users\romanpc\dev\env\env\myshop> cd .Scripts/activate
+cd : Cannot find path 'C:\Users\romanpc\dev\env\env\myshop\.Scripts\activate' because it does not exist.
+At line:1 char:1
++ cd .Scripts/activate
++ ~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (C:\Users\romanp...cripts\activate:String) [Set-Location], ItemNotFoundE
+   xception
+    + FullyQualifiedErrorId : PathNotFound,Microsoft.PowerShell.Commands.SetLocationCommand
+
+PS C:\Users\romanpc\dev\env\env\myshop> cd Scripts
+PS C:\Users\romanpc\dev\env\env\myshop\Scripts> activate
+activate : The term 'activate' is not recognized as the name of a cmdlet, function, script file, or operable program.
+Check the spelling of the name, or if a path was included, verify that the path is correct and try again.
+At line:1 char:1
++ activate
++ ~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (activate:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+
+
+Suggestion [3,General]: The command activate was not found, but does exist in the current location. Windows PowerShell does not load commands from the current location by default. If you trust this command, instead type: ".\activate". See "get-help about_Command_Precedence" for more details.
+PS C:\Users\romanpc\dev\env\env\myshop\Scripts> cd Scripts
+cd : Cannot find path 'C:\Users\romanpc\dev\env\env\myshop\Scripts\Scripts' because it does not exist.
+At line:1 char:1
++ cd Scripts
++ ~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (C:\Users\romanp...Scripts\Scripts:String) [Set-Location], ItemNotFoundE
+   xception
+    + FullyQualifiedErrorId : PathNotFound,Microsoft.PowerShell.Commands.SetLocationCommand
+
+PS C:\Users\romanpc\dev\env\env\myshop\Scripts> ls
+
+
+    Directory: C:\Users\romanpc\dev\env\env\myshop\Scripts
+
+
+Mode                LastWriteTime         Length Name
+----                -------------         ------ ----
+-a----       11/11/2020   4:39 PM           2312 activate
+-a----       11/11/2020   4:39 PM           1068 activate.bat
+-a----       11/11/2020   4:39 PM           3178 activate.fish
+-a----       11/11/2020   4:39 PM           1815 activate.ps1
+-a----       11/11/2020   4:39 PM           1215 activate.xsh
+-a----       11/11/2020   4:39 PM           1225 activate_this.py
+-a----       11/11/2020   4:39 PM            529 deactivate.bat
+-a----       11/11/2020   4:39 PM         106374 easy_install-3.8.exe
+-a----       11/11/2020   4:39 PM         106374 easy_install.exe
+-a----       11/11/2020   4:39 PM         106374 easy_install3.8.exe
+-a----       11/11/2020   4:39 PM         106374 easy_install3.exe
+-a----       11/11/2020   4:39 PM        3399200 libcrypto-1_1.dll
+-a----       11/11/2020   4:39 PM          32792 libffi-7.dll
+-a----       11/11/2020   4:39 PM         689184 libssl-1_1.dll
+-a----       11/11/2020   4:39 PM         106365 pip-3.8.exe
+-a----       11/11/2020   4:39 PM         106365 pip.exe
+-a----       11/11/2020   4:39 PM         106365 pip3.8.exe
+-a----       11/11/2020   4:39 PM         106365 pip3.exe
+-a----       11/11/2020   4:39 PM             25 pydoc.bat
+-a----       11/11/2020   4:39 PM         189000 pyexpat.pyd
+-a----       11/11/2020   4:39 PM         100424 python.exe
+-a----       11/11/2020   4:39 PM          58952 python3.dll
+-a----       11/11/2020   4:39 PM        4209224 python38.dll
+-a----       11/11/2020   4:39 PM          98888 pythonw.exe
+-a----       11/11/2020   4:39 PM          26696 select.pyd
+-a----       11/11/2020   4:39 PM        1475656 sqlite3.dll
+-a----       11/11/2020   4:39 PM        1705120 tcl86t.dll
+-a----       11/11/2020   4:39 PM        1468064 tk86t.dll
+-a----       11/11/2020   4:39 PM        1096264 unicodedata.pyd
+-a----       11/11/2020   4:39 PM         101664 vcruntime140.dll
+-a----       11/11/2020   4:39 PM          44328 vcruntime140_1.dll
+-a----       11/11/2020   4:39 PM         106352 wheel-3.8.exe
+-a----       11/11/2020   4:39 PM         106352 wheel.exe
+-a----       11/11/2020   4:39 PM         106352 wheel3.8.exe
+-a----       11/11/2020   4:39 PM         106352 wheel3.exe
+-a----       11/11/2020   4:39 PM          29256 winsound.pyd
+-a----       11/11/2020   4:39 PM          63560 _asyncio.pyd
+-a----       11/11/2020   4:39 PM          86088 _bz2.pyd
+-a----       11/11/2020   4:39 PM         126024 _ctypes.pyd
+-a----       11/11/2020   4:39 PM          33352 _ctypes_test.pyd
+-a----       11/11/2020   4:39 PM         266824 _decimal.pyd
+-a----       11/11/2020   4:39 PM         177224 _elementtree.pyd
+-a----       11/11/2020   4:39 PM          46152 _hashlib.pyd
+-a----       11/11/2020   4:39 PM         162376 _lzma.pyd
+-a----       11/11/2020   4:39 PM          38984 _msi.pyd
+-a----       11/11/2020   4:39 PM          29256 _multiprocessing.pyd
+-a----       11/11/2020   4:39 PM          45640 _overlapped.pyd
+-a----       11/11/2020   4:39 PM          28232 _queue.pyd
+-a----       11/11/2020   4:39 PM          78920 _socket.pyd
+-a----       11/11/2020   4:39 PM          87624 _sqlite3.pyd
+-a----       11/11/2020   4:39 PM         153672 _ssl.pyd
+-a----       11/11/2020   4:39 PM          54856 _testbuffer.pyd
+-a----       11/11/2020   4:39 PM         113224 _testcapi.pyd
+-a----       11/11/2020   4:39 PM          24136 _testconsole.pyd
+-a----       11/11/2020   4:39 PM          22088 _testimportmultiple.pyd
+-a----       11/11/2020   4:39 PM          31816 _testmultiphase.pyd
+-a----       11/11/2020   4:39 PM          64072 _tkinter.pyd
+
+
+PS C:\Users\romanpc\dev\env\env\myshop\Scripts> activate
+activate : The term 'activate' is not recognized as the name of a cmdlet, function, script file, or operable program.
+Check the spelling of the name, or if a path was included, verify that the path is correct and try again.
+At line:1 char:1
++ activate
++ ~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (activate:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+
+
+Suggestion [3,General]: The command activate was not found, but does exist in the current location. Windows PowerShell does not load commands from the current location by default. If you trust this command, instead type: ".\activate". See "get-help about_Command_Precedence" for more details.
+PS C:\Users\romanpc\dev\env\env\myshop\Scripts> Python
+Python 3.8.5 (tags/v3.8.5:580fbb0, Jul 20 2020, 15:57:54) [MSC v.1924 64 bit (AMD64)] on win32
+Type "help", "copyright", "credits" or "license" for more information.
+>>> ls
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+NameError: name 'ls' is not defined
+>>> cd ..
+  File "<stdin>", line 1
+    cd ..
+        ^
+SyntaxError: invalid syntax
+>>> Python activate
+  File "<stdin>", line 1
+    Python activate
+           ^
+SyntaxError: invalid syntax
+>>> exit()
+PS C:\Users\romanpc\dev\env\env\myshop\Scripts> ls
+
+
+    Directory: C:\Users\romanpc\dev\env\env\myshop\Scripts
+
+
+Mode                LastWriteTime         Length Name
+----                -------------         ------ ----
+-a----       11/11/2020   4:39 PM           2312 activate
+-a----       11/11/2020   4:39 PM           1068 activate.bat
+-a----       11/11/2020   4:39 PM           3178 activate.fish
+-a----       11/11/2020   4:39 PM           1815 activate.ps1
+-a----       11/11/2020   4:39 PM           1215 activate.xsh
+-a----       11/11/2020   4:39 PM           1225 activate_this.py
+-a----       11/11/2020   4:39 PM            529 deactivate.bat
+-a----       11/11/2020   4:39 PM         106374 easy_install-3.8.exe
+-a----       11/11/2020   4:39 PM         106374 easy_install.exe
+-a----       11/11/2020   4:39 PM         106374 easy_install3.8.exe
+-a----       11/11/2020   4:39 PM         106374 easy_install3.exe
+-a----       11/11/2020   4:39 PM        3399200 libcrypto-1_1.dll
+-a----       11/11/2020   4:39 PM          32792 libffi-7.dll
+-a----       11/11/2020   4:39 PM         689184 libssl-1_1.dll
+-a----       11/11/2020   4:39 PM         106365 pip-3.8.exe
+-a----       11/11/2020   4:39 PM         106365 pip.exe
+-a----       11/11/2020   4:39 PM         106365 pip3.8.exe
+-a----       11/11/2020   4:39 PM         106365 pip3.exe
+-a----       11/11/2020   4:39 PM             25 pydoc.bat
+-a----       11/11/2020   4:39 PM         189000 pyexpat.pyd
+-a----       11/11/2020   4:39 PM         100424 python.exe
+-a----       11/11/2020   4:39 PM          58952 python3.dll
+-a----       11/11/2020   4:39 PM        4209224 python38.dll
+-a----       11/11/2020   4:39 PM          98888 pythonw.exe
+-a----       11/11/2020   4:39 PM          26696 select.pyd
+-a----       11/11/2020   4:39 PM        1475656 sqlite3.dll
+-a----       11/11/2020   4:39 PM        1705120 tcl86t.dll
+-a----       11/11/2020   4:39 PM        1468064 tk86t.dll
+-a----       11/11/2020   4:39 PM        1096264 unicodedata.pyd
+-a----       11/11/2020   4:39 PM         101664 vcruntime140.dll
+-a----       11/11/2020   4:39 PM          44328 vcruntime140_1.dll
+-a----       11/11/2020   4:39 PM         106352 wheel-3.8.exe
+-a----       11/11/2020   4:39 PM         106352 wheel.exe
+-a----       11/11/2020   4:39 PM         106352 wheel3.8.exe
+-a----       11/11/2020   4:39 PM         106352 wheel3.exe
+-a----       11/11/2020   4:39 PM          29256 winsound.pyd
+-a----       11/11/2020   4:39 PM          63560 _asyncio.pyd
+-a----       11/11/2020   4:39 PM          86088 _bz2.pyd
+-a----       11/11/2020   4:39 PM         126024 _ctypes.pyd
+-a----       11/11/2020   4:39 PM          33352 _ctypes_test.pyd
+-a----       11/11/2020   4:39 PM         266824 _decimal.pyd
+-a----       11/11/2020   4:39 PM         177224 _elementtree.pyd
+-a----       11/11/2020   4:39 PM          46152 _hashlib.pyd
+-a----       11/11/2020   4:39 PM         162376 _lzma.pyd
+-a----       11/11/2020   4:39 PM          38984 _msi.pyd
+-a----       11/11/2020   4:39 PM          29256 _multiprocessing.pyd
+-a----       11/11/2020   4:39 PM          45640 _overlapped.pyd
+-a----       11/11/2020   4:39 PM          28232 _queue.pyd
+-a----       11/11/2020   4:39 PM          78920 _socket.pyd
+-a----       11/11/2020   4:39 PM          87624 _sqlite3.pyd
+-a----       11/11/2020   4:39 PM         153672 _ssl.pyd
+-a----       11/11/2020   4:39 PM          54856 _testbuffer.pyd
+-a----       11/11/2020   4:39 PM         113224 _testcapi.pyd
+-a----       11/11/2020   4:39 PM          24136 _testconsole.pyd
+-a----       11/11/2020   4:39 PM          22088 _testimportmultiple.pyd
+-a----       11/11/2020   4:39 PM          31816 _testmultiphase.pyd
+-a----       11/11/2020   4:39 PM          64072 _tkinter.pyd
+
+
+PS C:\Users\romanpc\dev\env\env\myshop\Scripts> cd ..
+PS C:\Users\romanpc\dev\env\env\myshop> ls
+
+
+    Directory: C:\Users\romanpc\dev\env\env\myshop
+
+
+Mode                LastWriteTime         Length Name
+----                -------------         ------ ----
+d-----       11/11/2020   4:39 PM                Lib
+d-----       11/11/2020   4:39 PM                Scripts
+-a----       11/11/2020   4:39 PM             42 .gitignore
+-a----       11/11/2020   4:39 PM            237 pyvenv.cfg
+
+
+PS C:\Users\romanpc\dev\env\env\myshop> ./Scripts/activate
+(myshop) PS C:\Users\romanpc\dev\env\env\myshop> pip install "Django==3.0.*"
+Collecting Django==3.0.*
+  Downloading Django-3.0.11-py3-none-any.whl (7.5 MB)
+     |████████████████████████████████| 7.5 MB 2.2 MB/s
+Collecting asgiref~=3.2
+  Downloading asgiref-3.3.1-py3-none-any.whl (19 kB)
+Collecting pytz
+  Downloading pytz-2020.4-py2.py3-none-any.whl (509 kB)
+     |████████████████████████████████| 509 kB 6.8 MB/s
+Collecting sqlparse>=0.2.2
+  Using cached sqlparse-0.4.1-py3-none-any.whl (42 kB)
+Installing collected packages: asgiref, pytz, sqlparse, Django
+Successfully installed Django-3.0.11 asgiref-3.3.1 pytz-2020.4 sqlparse-0.4.1
+WARNING: You are using pip version 20.2.3; however, version 20.2.4 is available.
+You should consider upgrading via the 'C:\Users\romanpc\Dev\env\env\myshop\Scripts\python.exe -m pip install --upgrade pip' command.
+(myshop) PS C:\Users\romanpc\dev\env\env\myshop> django-admin startproject myshop
+(myshop) PS C:\Users\romanpc\dev\env\env\myshop> ls
+
+
+    Directory: C:\Users\romanpc\dev\env\env\myshop
+
+
+Mode                LastWriteTime         Length Name
+----                -------------         ------ ----
+d-----       11/11/2020   4:39 PM                Lib
+d-----       11/11/2020   4:41 PM                myshop
+d-----       11/11/2020   4:41 PM                Scripts
+-a----       11/11/2020   4:39 PM             42 .gitignore
+-a----       11/11/2020   4:39 PM            237 pyvenv.cfg
+
+
+(myshop) PS C:\Users\romanpc\dev\env\env\myshop> cd myshop/
+(myshop) PS C:\Users\romanpc\dev\env\env\myshop\myshop> django-admin startapp shop
+(myshop) PS C:\Users\romanpc\dev\env\env\myshop\myshop> pip install Pillow==7.0.0
+Collecting Pillow==7.0.0
+  Using cached Pillow-7.0.0-cp38-cp38-win_amd64.whl (2.0 MB)
+Installing collected packages: Pillow
+Successfully installed Pillow-7.0.0
+WARNING: You are using pip version 20.2.3; however, version 20.2.4 is available.
+You should consider upgrading via the 'C:\Users\romanpc\Dev\env\env\myshop\Scripts\python.exe -m pip install --upgrade pip' command.
+(myshop) PS C:\Users\romanpc\dev\env\env\myshop\myshop> python manage.py makemigrations
+Traceback (most recent call last):
+  File "manage.py", line 21, in <module>
+    main()
+  File "manage.py", line 17, in main
+    execute_from_command_line(sys.argv)
+  File "C:\Users\romanpc\dev\env\env\myshop\lib\site-packages\django\core\management\__init__.py", line 401, in execute_from_command_line
+    utility.execute()
+  File "C:\Users\romanpc\dev\env\env\myshop\lib\site-packages\django\core\management\__init__.py", line 377, in execute
+    django.setup()
+  File "C:\Users\romanpc\dev\env\env\myshop\lib\site-packages\django\__init__.py", line 24, in setup
+    apps.populate(settings.INSTALLED_APPS)
+  File "C:\Users\romanpc\dev\env\env\myshop\lib\site-packages\django\apps\registry.py", line 114, in populate
+    app_config.import_models()
+  File "C:\Users\romanpc\dev\env\env\myshop\lib\site-packages\django\apps\config.py", line 211, in import_models
+    self.models_module = import_module(models_module_name)
+  File "c:\python38\lib\importlib\__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1014, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 991, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 975, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 671, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 779, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 916, in get_code
+  File "<frozen importlib._bootstrap_external>", line 846, in source_to_code
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "C:\Users\romanpc\dev\env\env\myshop\myshop\shop\models.py", line 36
+    return self.name
+    ^
+IndentationError: expected an indented block
+(myshop) PS C:\Users\romanpc\dev\env\env\myshop\myshop> python manage.py makemigrations
+Traceback (most recent call last):
+  File "manage.py", line 21, in <module>
+    main()
+  File "manage.py", line 17, in main
+    execute_from_command_line(sys.argv)
+  File "C:\Users\romanpc\dev\env\env\myshop\lib\site-packages\django\core\management\__init__.py", line 401, in execute_from_command_line
+    utility.execute()
+  File "C:\Users\romanpc\dev\env\env\myshop\lib\site-packages\django\core\management\__init__.py", line 377, in execute
+    django.setup()
+  File "C:\Users\romanpc\dev\env\env\myshop\lib\site-packages\django\__init__.py", line 24, in setup
+    apps.populate(settings.INSTALLED_APPS)
+  File "C:\Users\romanpc\dev\env\env\myshop\lib\site-packages\django\apps\registry.py", line 114, in populate
+    app_config.import_models()
+  File "C:\Users\romanpc\dev\env\env\myshop\lib\site-packages\django\apps\config.py", line 211, in import_models
+    self.models_module = import_module(models_module_name)
+  File "c:\python38\lib\importlib\__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1014, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 991, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 975, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 671, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 779, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 916, in get_code
+  File "<frozen importlib._bootstrap_external>", line 846, in source_to_code
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "C:\Users\romanpc\dev\env\env\myshop\myshop\shop\models.py", line 36
+    return self.name
+    ^
+IndentationError: expected an indented block
+(myshop) PS C:\Users\romanpc\dev\env\env\myshop\myshop> python manage.py makemigrations
+Migrations for 'shop':
+  shop\migrations\0001_initial.py
+    - Create model Category
+    - Create model Product
+(myshop) PS C:\Users\romanpc\dev\env\env\myshop\myshop> python manage.py migrate
+Operations to perform:
+  Apply all migrations: admin, auth, contenttypes, sessions, shop
+Running migrations:
+  Applying contenttypes.0001_initial... OK
+  Applying auth.0001_initial... OK
+  Applying admin.0001_initial... OK
+  Applying admin.0002_logentry_remove_auto_add... OK
+  Applying admin.0003_logentry_add_action_flag_choices... OK
+  Applying contenttypes.0002_remove_content_type_name... OK
+  Applying auth.0002_alter_permission_name_max_length... OK
+  Applying auth.0003_alter_user_email_max_length... OK
+  Applying auth.0004_alter_user_username_opts... OK
+  Applying auth.0005_alter_user_last_login_null... OK
+  Applying auth.0006_require_contenttypes_0002... OK
+  Applying auth.0007_alter_validators_add_error_messages... OK
+  Applying auth.0008_alter_user_username_max_length... OK
+  Applying auth.0009_alter_user_last_name_max_length... OK
+  Applying auth.0010_alter_group_name_max_length... OK
+  Applying auth.0011_update_proxy_permissions... OK
+  Applying sessions.0001_initial... OK
+  Applying shop.0001_initial... OK
+(myshop) PS C:\Users\romanpc\dev\env\env\myshop\myshop> python manage.py createsuperuser
+SystemCheckError: System check identified some issues:
+
+ERRORS:
+<class 'shop.admin.CategoryAdmin'>: (admin.E108) The value of 'list_display[0]' refers to 'namme', which is not a callable, an attribute of 'CategoryAdmin', or an attribute or method on 'shop.Category'.
+<class 'shop.admin.ProductAdmin'>: (admin.E108) The value of 'list_display[2]' refers to 'price', which is not a callable, an attribute of 'ProductAdmin', or an attribute or method on 'shop.Product'.
+<class 'shop.admin.ProductAdmin'>: (admin.E108) The value of 'list_display[3]' refers to 'available', which is not a callable, an attribute of 'ProductAdmin', or an attribute or method on 'shop.Product'.
+<class 'shop.admin.ProductAdmin'>: (admin.E108) The value of 'list_display[4]' refers to 'created', which is not a callable, an attribute of 'ProductAdmin', or an attribute or method on 'shop.Product'.
+<class 'shop.admin.ProductAdmin'>: (admin.E108) The value of 'list_display[5]' refers to 'updated', which is not a callable, an attribute of 'ProductAdmin', or an attribute or method on 'shop.Product'.
+<class 'shop.admin.ProductAdmin'>: (admin.E116) The value of 'list_filter[0]' refers to 'available', which does not refer to a Field.
+<class 'shop.admin.ProductAdmin'>: (admin.E116) The value of 'list_filter[1]' refers to 'created', which does not refer to a Field.
+<class 'shop.admin.ProductAdmin'>: (admin.E116) The value of 'list_filter[2]' refers to 'updated', which does not refer to a Field.
+<class 'shop.admin.ProductAdmin'>: (admin.E121) The value of 'list_editable[0]' refers to 'price', which is not an attribute of 'shop.Product'.
+<class 'shop.admin.ProductAdmin'>: (admin.E121) The value of 'list_editable[1]' refers to 'available', which is not an attribute of 'shop.Product'.
+(myshop) PS C:\Users\romanpc\dev\env\env\myshop\myshop> python manage.py createsuperuser
+SystemCheckError: System check identified some issues:
+
+ERRORS:
+<class 'shop.admin.ProductAdmin'>: (admin.E108) The value of 'list_display[2]' refers to 'price', which is not a callable, an attribute of 'ProductAdmin', or an attribute or method on 'shop.Product'.
+<class 'shop.admin.ProductAdmin'>: (admin.E108) The value of 'list_display[3]' refers to 'available', which is not a callable, an attribute of 'ProductAdmin', or an attribute or method on 'shop.Product'.
+<class 'shop.admin.ProductAdmin'>: (admin.E108) The value of 'list_display[4]' refers to 'created', which is not a callable, an attribute of 'ProductAdmin', or an attribute or method on 'shop.Product'.
+<class 'shop.admin.ProductAdmin'>: (admin.E108) The value of 'list_display[5]' refers to 'updated', which is not a callable, an attribute of 'ProductAdmin', or an attribute or method on 'shop.Product'.
+<class 'shop.admin.ProductAdmin'>: (admin.E116) The value of 'list_filter[0]' refers to 'available', which does not refer to a Field.
+<class 'shop.admin.ProductAdmin'>: (admin.E116) The value of 'list_filter[1]' refers to 'created', which does not refer to a Field.
+<class 'shop.admin.ProductAdmin'>: (admin.E116) The value of 'list_filter[2]' refers to 'updated', which does not refer to a Field.
+<class 'shop.admin.ProductAdmin'>: (admin.E121) The value of 'list_editable[0]' refers to 'price', which is not an attribute of 'shop.Product'.
+<class 'shop.admin.ProductAdmin'>: (admin.E121) The value of 'list_editable[1]' refers to 'available', which is not an attribute of 'shop.Product'.
+(myshop) PS C:\Users\romanpc\dev\env\env\myshop\myshop> python manage.py runserver
+Watching for file changes with StatReloader
+Performing system checks...
+
+Exception in thread django-main-thread:
+Traceback (most recent call last):
+  File "c:\python38\lib\threading.py", line 932, in _bootstrap_inner
+    self.run()
+  File "c:\python38\lib\threading.py", line 870, in run
+    self._target(*self._args, **self._kwargs)
+  File "C:\Users\romanpc\dev\env\env\myshop\lib\site-packages\django\utils\autoreload.py", line 53, in wrapper
+    fn(*args, **kwargs)
+  File "C:\Users\romanpc\dev\env\env\myshop\lib\site-packages\django\core\management\commands\runserver.py", line 117, in inner_run
+    self.check(display_num_errors=True)
+  File "C:\Users\romanpc\dev\env\env\myshop\lib\site-packages\django\core\management\base.py", line 441, in check
+    raise SystemCheckError(msg)
+django.core.management.base.SystemCheckError: SystemCheckError: System check identified some issues:
+
+ERRORS:
+<class 'shop.admin.ProductAdmin'>: (admin.E108) The value of 'list_display[2]' refers to 'price', which is not a callable, an attribute of 'ProductAdmin', or an attribute or method on 'shop.Product'.
+<class 'shop.admin.ProductAdmin'>: (admin.E108) The value of 'list_display[3]' refers to 'available', which is not a callable, an attribute of 'ProductAdmin', or an attribute or method on 'shop.Product'.
+<class 'shop.admin.ProductAdmin'>: (admin.E108) The value of 'list_display[4]' refers to 'created', which is not a callable, an attribute of 'ProductAdmin', or an attribute or method on 'shop.Product'.
+<class 'shop.admin.ProductAdmin'>: (admin.E108) The value of 'list_display[5]' refers to 'updated', which is not a callable, an attribute of 'ProductAdmin', or an attribute or method on 'shop.Product'.
+<class 'shop.admin.ProductAdmin'>: (admin.E116) The value of 'list_filter[0]' refers to 'available', which does not refer to a Field.
+<class 'shop.admin.ProductAdmin'>: (admin.E116) The value of 'list_filter[1]' refers to 'created', which does not refer to a Field.
+<class 'shop.admin.ProductAdmin'>: (admin.E116) The value of 'list_filter[2]' refers to 'updated', which does not refer to a Field.
+<class 'shop.admin.ProductAdmin'>: (admin.E121) The value of 'list_editable[0]' refers to 'price', which is not an attribute of 'shop.Product'.
+<class 'shop.admin.ProductAdmin'>: (admin.E121) The value of 'list_editable[1]' refers to 'available', which is not an attribute of 'shop.Product'.
+
+System check identified 9 issues (0 silenced).
+(myshop) PS C:\Users\romanpc\dev\env\env\myshop\myshop> python manage.py migrate
+SystemCheckError: System check identified some issues:
+
+ERRORS:
+<class 'shop.admin.ProductAdmin'>: (admin.E108) The value of 'list_display[2]' refers to 'price', which is not a callable, an attribute of 'ProductAdmin', or an attribute or method on 'shop.Product'.
+<class 'shop.admin.ProductAdmin'>: (admin.E108) The value of 'list_display[3]' refers to 'available', which is not a callable, an attribute of 'ProductAdmin', or an attribute or method on 'shop.Product'.
+<class 'shop.admin.ProductAdmin'>: (admin.E108) The value of 'list_display[4]' refers to 'created', which is not a callable, an attribute of 'ProductAdmin', or an attribute or method on 'shop.Product'.
+<class 'shop.admin.ProductAdmin'>: (admin.E108) The value of 'list_display[5]' refers to 'updated', which is not a callable, an attribute of 'ProductAdmin', or an attribute or method on 'shop.Product'.
+<class 'shop.admin.ProductAdmin'>: (admin.E116) The value of 'list_filter[0]' refers to 'available', which does not refer to a Field.
+<class 'shop.admin.ProductAdmin'>: (admin.E116) The value of 'list_filter[1]' refers to 'created', which does not refer to a Field.
+<class 'shop.admin.ProductAdmin'>: (admin.E116) The value of 'list_filter[2]' refers to 'updated', which does not refer to a Field.
+<class 'shop.admin.ProductAdmin'>: (admin.E121) The value of 'list_editable[0]' refers to 'price', which is not an attribute of 'shop.Product'.
+<class 'shop.admin.ProductAdmin'>: (admin.E121) The value of 'list_editable[1]' refers to 'available', which is not an attribute of 'shop.Product'.
+(myshop) PS C:\Users\romanpc\dev\env\env\myshop\myshop> python manage.py makemigrations
+SystemCheckError: System check identified some issues:
+
+ERRORS:
+<class 'shop.admin.ProductAdmin'>: (admin.E108) The value of 'list_display[2]' refers to 'price', which is not a callable, an attribute of 'ProductAdmin', or an attribute or method on 'shop.Product'.
+<class 'shop.admin.ProductAdmin'>: (admin.E108) The value of 'list_display[3]' refers to 'available', which is not a callable, an attribute of 'ProductAdmin', or an attribute or method on 'shop.Product'.
+<class 'shop.admin.ProductAdmin'>: (admin.E108) The value of 'list_display[4]' refers to 'created', which is not a callable, an attribute of 'ProductAdmin', or an attribute or method on 'shop.Product'.
+<class 'shop.admin.ProductAdmin'>: (admin.E108) The value of 'list_display[5]' refers to 'updated', which is not a callable, an attribute of 'ProductAdmin', or an attribute or method on 'shop.Product'.
+<class 'shop.admin.ProductAdmin'>: (admin.E116) The value of 'list_filter[0]' refers to 'available', which does not refer to a Field.
+<class 'shop.admin.ProductAdmin'>: (admin.E116) The value of 'list_filter[1]' refers to 'created', which does not refer to a Field.
+<class 'shop.admin.ProductAdmin'>: (admin.E116) The value of 'list_filter[2]' refers to 'updated', which does not refer to a Field.
+<class 'shop.admin.ProductAdmin'>: (admin.E121) The value of 'list_editable[0]' refers to 'price', which is not an attribute of 'shop.Product'.
+<class 'shop.admin.ProductAdmin'>: (admin.E121) The value of 'list_editable[1]' refers to 'available', which is not an attribute of 'shop.Product'.
+(myshop) PS C:\Users\romanpc\dev\env\env\myshop\myshop> python manage.py createsuperuser
+SystemCheckError: System check identified some issues:
+
+ERRORS:
+<class 'shop.admin.ProductAdmin'>: (admin.E108) The value of 'list_display[2]' refers to 'price', which is not a callable, an attribute of 'ProductAdmin', or an attribute or method on 'shop.Product'.
+<class 'shop.admin.ProductAdmin'>: (admin.E108) The value of 'list_display[3]' refers to 'available', which is not a callable, an attribute of 'ProductAdmin', or an attribute or method on 'shop.Product'.
+<class 'shop.admin.ProductAdmin'>: (admin.E108) The value of 'list_display[4]' refers to 'created', which is not a callable, an attribute of 'ProductAdmin', or an attribute or method on 'shop.Product'.
+<class 'shop.admin.ProductAdmin'>: (admin.E108) The value of 'list_display[5]' refers to 'updated', which is not a callable, an attribute of 'ProductAdmin', or an attribute or method on 'shop.Product'.
+<class 'shop.admin.ProductAdmin'>: (admin.E116) The value of 'list_filter[0]' refers to 'available', which does not refer to a Field.
+<class 'shop.admin.ProductAdmin'>: (admin.E116) The value of 'list_filter[1]' refers to 'created', which does not refer to a Field.
+<class 'shop.admin.ProductAdmin'>: (admin.E116) The value of 'list_filter[2]' refers to 'updated', which does not refer to a Field.
+<class 'shop.admin.ProductAdmin'>: (admin.E121) The value of 'list_editable[0]' refers to 'price', which is not an attribute of 'shop.Product'.
+<class 'shop.admin.ProductAdmin'>: (admin.E121) The value of 'list_editable[1]' refers to 'available', which is not an attribute of 'shop.Product'.
+(myshop) PS C:\Users\romanpc\dev\env\env\myshop\myshop> python manage.py createsuperuser
+SystemCheckError: System check identified some issues:
+
+ERRORS:
+<class 'shop.admin.ProductAdmin'>: (admin.E108) The value of 'list_display[2]' refers to 'price', which is not a callable, an attribute of 'ProductAdmin', or an attribute or method on 'shop.Product'.
+<class 'shop.admin.ProductAdmin'>: (admin.E108) The value of 'list_display[3]' refers to 'available', which is not a callable, an attribute of 'ProductAdmin', or an attribute or method on 'shop.Product'.
+<class 'shop.admin.ProductAdmin'>: (admin.E108) The value of 'list_display[4]' refers to 'created', which is not a callable, an attribute of 'ProductAdmin', or an attribute or method on 'shop.Product'.
+<class 'shop.admin.ProductAdmin'>: (admin.E108) The value of 'list_display[5]' refers to 'updated', which is not a callable, an attribute of 'ProductAdmin', or an attribute or method on 'shop.Product'.
+<class 'shop.admin.ProductAdmin'>: (admin.E116) The value of 'list_filter[0]' refers to 'available', which does not refer to a Field.
+<class 'shop.admin.ProductAdmin'>: (admin.E116) The value of 'list_filter[1]' refers to 'created', which does not refer to a Field.
+<class 'shop.admin.ProductAdmin'>: (admin.E116) The value of 'list_filter[2]' refers to 'updated', which does not refer to a Field.
+<class 'shop.admin.ProductAdmin'>: (admin.E121) The value of 'list_editable[0]' refers to 'price', which is not an attribute of 'shop.Product'.
+<class 'shop.admin.ProductAdmin'>: (admin.E121) The value of 'list_editable[1]' refers to 'available', which is not an attribute of 'shop.Product'.
+(myshop) PS C:\Users\romanpc\dev\env\env\myshop\myshop> python manage.py runserver
+Traceback (most recent call last):
+  File "manage.py", line 21, in <module>
+    main()
+  File "manage.py", line 17, in main
+    execute_from_command_line(sys.argv)
+  File "C:\Users\romanpc\dev\env\env\myshop\lib\site-packages\django\core\management\__init__.py", line 401, in execute_from_command_line
+    utility.execute()
+  File "C:\Users\romanpc\dev\env\env\myshop\lib\site-packages\django\core\management\__init__.py", line 345, in execute
+    settings.INSTALLED_APPS
+  File "C:\Users\romanpc\dev\env\env\myshop\lib\site-packages\django\conf\__init__.py", line 76, in __getattr__
+    self._setup(name)
+  File "C:\Users\romanpc\dev\env\env\myshop\lib\site-packages\django\conf\__init__.py", line 63, in _setup
+    self._wrapped = Settings(settings_module)
+  File "C:\Users\romanpc\dev\env\env\myshop\lib\site-packages\django\conf\__init__.py", line 142, in __init__
+    mod = importlib.import_module(self.SETTINGS_MODULE)
+  File "c:\python38\lib\importlib\__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1014, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 991, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 975, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 671, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 779, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 916, in get_code
+  File "<frozen importlib._bootstrap_external>", line 846, in source_to_code
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "C:\Users\romanpc\dev\env\env\myshop\myshop\myshop\settings.py", line 124
+    MEDIA_ROOT = os.path.join(BASE_DIR, 'media/)
+                                               ^
+SyntaxError: EOL while scanning string literal
+(myshop) PS C:\Users\romanpc\dev\env\env\myshop\myshop> python manage.py startapp cart
+Traceback (most recent call last):
+  File "manage.py", line 21, in <module>
+    main()
+  File "manage.py", line 17, in main
+    execute_from_command_line(sys.argv)
+  File "C:\Users\romanpc\dev\env\env\myshop\lib\site-packages\django\core\management\__init__.py", line 401, in execute_from_command_line
+    utility.execute()
+  File "C:\Users\romanpc\dev\env\env\myshop\lib\site-packages\django\core\management\__init__.py", line 345, in execute
+    settings.INSTALLED_APPS
+  File "C:\Users\romanpc\dev\env\env\myshop\lib\site-packages\django\conf\__init__.py", line 76, in __getattr__
+    self._setup(name)
+  File "C:\Users\romanpc\dev\env\env\myshop\lib\site-packages\django\conf\__init__.py", line 63, in _setup
+    self._wrapped = Settings(settings_module)
+  File "C:\Users\romanpc\dev\env\env\myshop\lib\site-packages\django\conf\__init__.py", line 142, in __init__
+    mod = importlib.import_module(self.SETTINGS_MODULE)
+  File "c:\python38\lib\importlib\__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1014, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 991, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 975, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 671, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 779, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 916, in get_code
+  File "<frozen importlib._bootstrap_external>", line 846, in source_to_code
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "C:\Users\romanpc\dev\env\env\myshop\myshop\myshop\settings.py", line 124
+    MEDIA_ROOT = os.path.join(BASE_DIR, 'media/)
+                                               ^
+SyntaxError: EOL while scanning string literal
+(myshop) PS C:\Users\romanpc\dev\env\env\myshop\myshop> python manage.py startapp cart
+Traceback (most recent call last):
+  File "manage.py", line 21, in <module>
+    main()
+  File "manage.py", line 17, in main
+    execute_from_command_line(sys.argv)
+  File "C:\Users\romanpc\dev\env\env\myshop\lib\site-packages\django\core\management\__init__.py", line 401, in execute_from_command_line
+    utility.execute()
+  File "C:\Users\romanpc\dev\env\env\myshop\lib\site-packages\django\core\management\__init__.py", line 377, in execute
+    django.setup()
+  File "C:\Users\romanpc\dev\env\env\myshop\lib\site-packages\django\__init__.py", line 24, in setup
+    apps.populate(settings.INSTALLED_APPS)
+  File "C:\Users\romanpc\dev\env\env\myshop\lib\site-packages\django\apps\registry.py", line 91, in populate
+    app_config = AppConfig.create(entry)
+  File "C:\Users\romanpc\dev\env\env\myshop\lib\site-packages\django\apps\config.py", line 116, in create
+    mod = import_module(mod_path)
+  File "c:\python38\lib\importlib\__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1014, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 991, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 961, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "<frozen importlib._bootstrap>", line 1014, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 991, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 973, in _find_and_load_unlocked
+ModuleNotFoundError: No module named 'cart'
+(myshop) PS C:\Users\romanpc\dev\env\env\myshop\myshop> python manage.py startapp cart
+(myshop) PS C:\Users\romanpc\dev\env\env\myshop\myshop> python manage.py runserver
+Watching for file changes with StatReloader
+Exception in thread django-main-thread:
+Traceback (most recent call last):
+  File "c:\python38\lib\threading.py", line 932, in _bootstrap_inner
+    self.run()
+  File "c:\python38\lib\threading.py", line 870, in run
+    self._target(*self._args, **self._kwargs)
+  File "C:\Users\romanpc\dev\env\env\myshop\lib\site-packages\django\utils\autoreload.py", line 53, in wrapper
+    fn(*args, **kwargs)
+  File "C:\Users\romanpc\dev\env\env\myshop\lib\site-packages\django\core\management\commands\runserver.py", line 109, in inner_run
+    autoreload.raise_last_exception()
+  File "C:\Users\romanpc\dev\env\env\myshop\lib\site-packages\django\utils\autoreload.py", line 76, in raise_last_exception
+    raise _exception[1]
+  File "C:\Users\romanpc\dev\env\env\myshop\lib\site-packages\django\core\management\__init__.py", line 357, in execute
+    autoreload.check_errors(django.setup)()
+  File "C:\Users\romanpc\dev\env\env\myshop\lib\site-packages\django\utils\autoreload.py", line 53, in wrapper
+    fn(*args, **kwargs)
+  File "C:\Users\romanpc\dev\env\env\myshop\lib\site-packages\django\__init__.py", line 24, in setup
+    apps.populate(settings.INSTALLED_APPS)
+  File "C:\Users\romanpc\dev\env\env\myshop\lib\site-packages\django\apps\registry.py", line 91, in populate
+    app_config = AppConfig.create(entry)
+  File "C:\Users\romanpc\dev\env\env\myshop\lib\site-packages\django\apps\config.py", line 116, in create
+    mod = import_module(mod_path)
+  File "c:\python38\lib\importlib\__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1014, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 991, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 961, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "<frozen importlib._bootstrap>", line 1014, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 991, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 973, in _find_and_load_unlocked
+ModuleNotFoundError: No module named 'orders'
+Traceback (most recent call last):
+  File "manage.py", line 21, in <module>
+    main()
+  File "manage.py", line 17, in main
+    execute_from_command_line(sys.argv)
+  File "C:\Users\romanpc\dev\env\env\myshop\lib\site-packages\django\core\management\__init__.py", line 401, in execute_from_command_line
+    utility.execute()
+  File "C:\Users\romanpc\dev\env\env\myshop\lib\site-packages\django\core\management\__init__.py", line 395, in execute
+    self.fetch_command(subcommand).run_from_argv(self.argv)
+  File "C:\Users\romanpc\dev\env\env\myshop\lib\site-packages\django\core\management\base.py", line 328, in run_from_argv
+    self.execute(*args, **cmd_options)
+  File "C:\Users\romanpc\dev\env\env\myshop\lib\site-packages\django\core\management\commands\runserver.py", line 60, in execute
+    super().execute(*args, **options)
+  File "C:\Users\romanpc\dev\env\env\myshop\lib\site-packages\django\core\management\base.py", line 369, in execute
+    output = self.handle(*args, **options)
+  File "C:\Users\romanpc\dev\env\env\myshop\lib\site-packages\django\core\management\commands\runserver.py", line 95, in handle
+    self.run(**options)
+  File "C:\Users\romanpc\dev\env\env\myshop\lib\site-packages\django\core\management\commands\runserver.py", line 102, in run
+    autoreload.run_with_reloader(self.inner_run, **options)
+  File "C:\Users\romanpc\dev\env\env\myshop\lib\site-packages\django\utils\autoreload.py", line 599, in run_with_reloader
+    start_django(reloader, main_func, *args, **kwargs)
+  File "C:\Users\romanpc\dev\env\env\myshop\lib\site-packages\django\utils\autoreload.py", line 584, in start_django
+    reloader.run(django_main_thread)
+  File "C:\Users\romanpc\dev\env\env\myshop\lib\site-packages\django\utils\autoreload.py", line 299, in run
+    self.run_loop()
+  File "C:\Users\romanpc\dev\env\env\myshop\lib\site-packages\django\utils\autoreload.py", line 305, in run_loop
+    next(ticker)
+  File "C:\Users\romanpc\dev\env\env\myshop\lib\site-packages\django\utils\autoreload.py", line 345, in tick
+    for filepath, mtime in self.snapshot_files():
+  File "C:\Users\romanpc\dev\env\env\myshop\lib\site-packages\django\utils\autoreload.py", line 361, in snapshot_files
+    for file in self.watched_files():
+  File "C:\Users\romanpc\dev\env\env\myshop\lib\site-packages\django\utils\autoreload.py", line 260, in watched_files
+    yield from iter_all_python_module_files()
+  File "C:\Users\romanpc\dev\env\env\myshop\lib\site-packages\django\utils\autoreload.py", line 105, in iter_all_python_module_files
+    return iter_modules_and_files(modules, frozenset(_error_files))
+  File "C:\Users\romanpc\dev\env\env\myshop\lib\site-packages\django\utils\autoreload.py", line 141, in iter_modules_and_files
+    resolved_path = path.resolve(strict=True).absolute()
+  File "c:\python38\lib\pathlib.py", line 1177, in resolve
+    s = self._flavour.resolve(self, strict=strict)
+  File "c:\python38\lib\pathlib.py", line 200, in resolve
+    return self._ext_to_normal(_getfinalpathname(s))
+OSError: [WinError 123] The filename, directory name, or volume label syntax is incorrect: '<frozen importlib._bootstrap>'
+(myshop) PS C:\Users\romanpc\dev\env\env\myshop\myshop> python manage.py runserver
+Watching for file changes with StatReloader
+Exception in thread django-main-thread:
+Traceback (most recent call last):
+  File "c:\python38\lib\threading.py", line 932, in _bootstrap_inner
+    self.run()
+  File "c:\python38\lib\threading.py", line 870, in run
+    self._target(*self._args, **self._kwargs)
+  File "C:\Users\romanpc\dev\env\env\myshop\lib\site-packages\django\utils\autoreload.py", line 53, in wrapper
+    fn(*args, **kwargs)
+  File "C:\Users\romanpc\dev\env\env\myshop\lib\site-packages\django\core\management\commands\runserver.py", line 109, in inner_run
+    autoreload.raise_last_exception()
+  File "C:\Users\romanpc\dev\env\env\myshop\lib\site-packages\django\utils\autoreload.py", line 76, in raise_last_exception
+    raise _exception[1]
+  File "C:\Users\romanpc\dev\env\env\myshop\lib\site-packages\django\core\management\__init__.py", line 357, in execute
+    autoreload.check_errors(django.setup)()
+  File "C:\Users\romanpc\dev\env\env\myshop\lib\site-packages\django\utils\autoreload.py", line 53, in wrapper
+    fn(*args, **kwargs)
+  File "C:\Users\romanpc\dev\env\env\myshop\lib\site-packages\django\__init__.py", line 24, in setup
+    apps.populate(settings.INSTALLED_APPS)
+  File "C:\Users\romanpc\dev\env\env\myshop\lib\site-packages\django\apps\registry.py", line 91, in populate
+    app_config = AppConfig.create(entry)
+  File "C:\Users\romanpc\dev\env\env\myshop\lib\site-packages\django\apps\config.py", line 116, in create
+    mod = import_module(mod_path)
+  File "c:\python38\lib\importlib\__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1014, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 991, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 961, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "<frozen importlib._bootstrap>", line 1014, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 991, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 973, in _find_and_load_unlocked
+ModuleNotFoundError: No module named 'orders'
+Traceback (most recent call last):
+  File "manage.py", line 21, in <module>
+    main()
+  File "manage.py", line 17, in main
+    execute_from_command_line(sys.argv)
+  File "C:\Users\romanpc\dev\env\env\myshop\lib\site-packages\django\core\management\__init__.py", line 401, in execute_from_command_line
+    utility.execute()
+  File "C:\Users\romanpc\dev\env\env\myshop\lib\site-packages\django\core\management\__init__.py", line 395, in execute
+    self.fetch_command(subcommand).run_from_argv(self.argv)
+  File "C:\Users\romanpc\dev\env\env\myshop\lib\site-packages\django\core\management\base.py", line 328, in run_from_argv
+    self.execute(*args, **cmd_options)
+  File "C:\Users\romanpc\dev\env\env\myshop\lib\site-packages\django\core\management\commands\runserver.py", line 60, in execute
+    super().execute(*args, **options)
+  File "C:\Users\romanpc\dev\env\env\myshop\lib\site-packages\django\core\management\base.py", line 369, in execute
+    output = self.handle(*args, **options)
+  File "C:\Users\romanpc\dev\env\env\myshop\lib\site-packages\django\core\management\commands\runserver.py", line 95, in handle
+    self.run(**options)
+  File "C:\Users\romanpc\dev\env\env\myshop\lib\site-packages\django\core\management\commands\runserver.py", line 102, in run
+    autoreload.run_with_reloader(self.inner_run, **options)
+  File "C:\Users\romanpc\dev\env\env\myshop\lib\site-packages\django\utils\autoreload.py", line 599, in run_with_reloader
+    start_django(reloader, main_func, *args, **kwargs)
+  File "C:\Users\romanpc\dev\env\env\myshop\lib\site-packages\django\utils\autoreload.py", line 584, in start_django
+    reloader.run(django_main_thread)
+  File "C:\Users\romanpc\dev\env\env\myshop\lib\site-packages\django\utils\autoreload.py", line 299, in run
+    self.run_loop()
+  File "C:\Users\romanpc\dev\env\env\myshop\lib\site-packages\django\utils\autoreload.py", line 305, in run_loop
+    next(ticker)
+  File "C:\Users\romanpc\dev\env\env\myshop\lib\site-packages\django\utils\autoreload.py", line 345, in tick
+    for filepath, mtime in self.snapshot_files():
+  File "C:\Users\romanpc\dev\env\env\myshop\lib\site-packages\django\utils\autoreload.py", line 361, in snapshot_files
+    for file in self.watched_files():
+  File "C:\Users\romanpc\dev\env\env\myshop\lib\site-packages\django\utils\autoreload.py", line 260, in watched_files
+    yield from iter_all_python_module_files()
+  File "C:\Users\romanpc\dev\env\env\myshop\lib\site-packages\django\utils\autoreload.py", line 105, in iter_all_python_module_files
+    return iter_modules_and_files(modules, frozenset(_error_files))
+  File "C:\Users\romanpc\dev\env\env\myshop\lib\site-packages\django\utils\autoreload.py", line 141, in iter_modules_and_files
+    resolved_path = path.resolve(strict=True).absolute()
+  File "c:\python38\lib\pathlib.py", line 1177, in resolve
+    s = self._flavour.resolve(self, strict=strict)
+  File "c:\python38\lib\pathlib.py", line 200, in resolve
+    return self._ext_to_normal(_getfinalpathname(s))
+OSError: [WinError 123] The filename, directory name, or volume label syntax is incorrect: '<frozen importlib._bootstrap>'
+(myshop) PS C:\Users\romanpc\dev\env\env\myshop\myshop> python manage.py runserver
+Watching for file changes with StatReloader
+Exception in thread django-main-thread:
+Traceback (most recent call last):
+  File "c:\python38\lib\threading.py", line 932, in _bootstrap_inner
+    self.run()
+  File "c:\python38\lib\threading.py", line 870, in run
+    self._target(*self._args, **self._kwargs)
+  File "C:\Users\romanpc\dev\env\env\myshop\lib\site-packages\django\utils\autoreload.py", line 53, in wrapper
+    fn(*args, **kwargs)
+  File "C:\Users\romanpc\dev\env\env\myshop\lib\site-packages\django\core\management\commands\runserver.py", line 109, in inner_run
+    autoreload.raise_last_exception()
+  File "C:\Users\romanpc\dev\env\env\myshop\lib\site-packages\django\utils\autoreload.py", line 76, in raise_last_exception
+    raise _exception[1]
+  File "C:\Users\romanpc\dev\env\env\myshop\lib\site-packages\django\core\management\__init__.py", line 357, in execute
+    autoreload.check_errors(django.setup)()
+  File "C:\Users\romanpc\dev\env\env\myshop\lib\site-packages\django\utils\autoreload.py", line 53, in wrapper
+    fn(*args, **kwargs)
+  File "C:\Users\romanpc\dev\env\env\myshop\lib\site-packages\django\__init__.py", line 24, in setup
+    apps.populate(settings.INSTALLED_APPS)
+  File "C:\Users\romanpc\dev\env\env\myshop\lib\site-packages\django\apps\registry.py", line 91, in populate
+    app_config = AppConfig.create(entry)
+  File "C:\Users\romanpc\dev\env\env\myshop\lib\site-packages\django\apps\config.py", line 116, in create
+    mod = import_module(mod_path)
+  File "c:\python38\lib\importlib\__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1014, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 991, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 961, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "<frozen importlib._bootstrap>", line 1014, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 991, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 973, in _find_and_load_unlocked
+ModuleNotFoundError: No module named 'orders'
+Traceback (most recent call last):
+  File "manage.py", line 21, in <module>
+    main()
+  File "manage.py", line 17, in main
+    execute_from_command_line(sys.argv)
+  File "C:\Users\romanpc\dev\env\env\myshop\lib\site-packages\django\core\management\__init__.py", line 401, in execute_from_command_line
+    utility.execute()
+  File "C:\Users\romanpc\dev\env\env\myshop\lib\site-packages\django\core\management\__init__.py", line 395, in execute
+    self.fetch_command(subcommand).run_from_argv(self.argv)
+  File "C:\Users\romanpc\dev\env\env\myshop\lib\site-packages\django\core\management\base.py", line 328, in run_from_argv
+    self.execute(*args, **cmd_options)
+  File "C:\Users\romanpc\dev\env\env\myshop\lib\site-packages\django\core\management\commands\runserver.py", line 60, in execute
+    super().execute(*args, **options)
+  File "C:\Users\romanpc\dev\env\env\myshop\lib\site-packages\django\core\management\base.py", line 369, in execute
+    output = self.handle(*args, **options)
+  File "C:\Users\romanpc\dev\env\env\myshop\lib\site-packages\django\core\management\commands\runserver.py", line 95, in handle
+    self.run(**options)
+  File "C:\Users\romanpc\dev\env\env\myshop\lib\site-packages\django\core\management\commands\runserver.py", line 102, in run
+    autoreload.run_with_reloader(self.inner_run, **options)
+  File "C:\Users\romanpc\dev\env\env\myshop\lib\site-packages\django\utils\autoreload.py", line 599, in run_with_reloader
+    start_django(reloader, main_func, *args, **kwargs)
+  File "C:\Users\romanpc\dev\env\env\myshop\lib\site-packages\django\utils\autoreload.py", line 584, in start_django
+    reloader.run(django_main_thread)
+  File "C:\Users\romanpc\dev\env\env\myshop\lib\site-packages\django\utils\autoreload.py", line 299, in run
+    self.run_loop()
+  File "C:\Users\romanpc\dev\env\env\myshop\lib\site-packages\django\utils\autoreload.py", line 305, in run_loop
+    next(ticker)
+  File "C:\Users\romanpc\dev\env\env\myshop\lib\site-packages\django\utils\autoreload.py", line 345, in tick
+    for filepath, mtime in self.snapshot_files():
+  File "C:\Users\romanpc\dev\env\env\myshop\lib\site-packages\django\utils\autoreload.py", line 361, in snapshot_files
+    for file in self.watched_files():
+  File "C:\Users\romanpc\dev\env\env\myshop\lib\site-packages\django\utils\autoreload.py", line 260, in watched_files
+    yield from iter_all_python_module_files()
+  File "C:\Users\romanpc\dev\env\env\myshop\lib\site-packages\django\utils\autoreload.py", line 105, in iter_all_python_module_files
+    return iter_modules_and_files(modules, frozenset(_error_files))
+  File "C:\Users\romanpc\dev\env\env\myshop\lib\site-packages\django\utils\autoreload.py", line 141, in iter_modules_and_files
+    resolved_path = path.resolve(strict=True).absolute()
+  File "c:\python38\lib\pathlib.py", line 1177, in resolve
+    s = self._flavour.resolve(self, strict=strict)
+  File "c:\python38\lib\pathlib.py", line 200, in resolve
+    return self._ext_to_normal(_getfinalpathname(s))
+OSError: [WinError 123] The filename, directory name, or volume label syntax is incorrect: '<frozen importlib._bootstrap>'
+(myshop) PS C:\Users\romanpc\dev\env\env\myshop\myshop> python manage.py startapp orders
+Traceback (most recent call last):
+  File "manage.py", line 21, in <module>
+    main()
+  File "manage.py", line 17, in main
+    execute_from_command_line(sys.argv)
+  File "C:\Users\romanpc\dev\env\env\myshop\lib\site-packages\django\core\management\__init__.py", line 401, in execute_from_command_line
+    utility.execute()
+  File "C:\Users\romanpc\dev\env\env\myshop\lib\site-packages\django\core\management\__init__.py", line 377, in execute
+    django.setup()
+  File "C:\Users\romanpc\dev\env\env\myshop\lib\site-packages\django\__init__.py", line 24, in setup
+    apps.populate(settings.INSTALLED_APPS)
+  File "C:\Users\romanpc\dev\env\env\myshop\lib\site-packages\django\apps\registry.py", line 91, in populate
+    app_config = AppConfig.create(entry)
+  File "C:\Users\romanpc\dev\env\env\myshop\lib\site-packages\django\apps\config.py", line 116, in create
+    mod = import_module(mod_path)
+  File "c:\python38\lib\importlib\__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1014, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 991, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 961, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "<frozen importlib._bootstrap>", line 1014, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 991, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 973, in _find_and_load_unlocked
+ModuleNotFoundError: No module named 'orders'
+(myshop) PS C:\Users\romanpc\dev\env\env\myshop\myshop> pip install celery==4.4.2
+Collecting celery==4.4.2
+  Downloading celery-4.4.2-py2.py3-none-any.whl (422 kB)
+     |████████████████████████████████| 422 kB 2.2 MB/s
+Collecting billiard<4.0,>=3.6.3.0
+  Downloading billiard-3.6.3.0-py3-none-any.whl (89 kB)
+     |████████████████████████████████| 89 kB 4.2 MB/s
+Collecting kombu<4.7,>=4.6.8
+  Downloading kombu-4.6.11-py2.py3-none-any.whl (184 kB)
+     |████████████████████████████████| 184 kB ...
+Collecting vine==1.3.0
+  Downloading vine-1.3.0-py2.py3-none-any.whl (14 kB)
+Requirement already satisfied: pytz>dev in c:\users\romanpc\dev\env\env\myshop\lib\site-packages (from celery==4.4.2) (2020.4)
+Collecting amqp<2.7,>=2.6.0
+  Downloading amqp-2.6.1-py2.py3-none-any.whl (48 kB)
+     |████████████████████████████████| 48 kB 2.3 MB/s
+Installing collected packages: billiard, vine, amqp, kombu, celery
+Successfully installed amqp-2.6.1 billiard-3.6.3.0 celery-4.4.2 kombu-4.6.11 vine-1.3.0
+WARNING: You are using pip version 20.2.3; however, version 20.2.4 is available.
+You should consider upgrading via the 'C:\Users\romanpc\Dev\env\env\myshop\Scripts\python.exe -m pip install --upgrade pip' command.
+(myshop) PS C:\Users\romanpc\dev\env\env\myshop\myshop> apt-get install rabbitmq
+apt-get : The term 'apt-get' is not recognized as the name of a cmdlet, function, script file, or operable
+program. Check the spelling of the name, or if a path was included, verify that the path is correct and try again.
+At line:1 char:1
++ apt-get install rabbitmq
++ ~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (apt-get:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+
+(myshop) PS C:\Users\romanpc\dev\env\env\myshop\myshop> rabbitmq-server
+rabbitmq-server : The term 'rabbitmq-server' is not recognized as the name of a cmdlet, function, script file, or
+operable program. Check the spelling of the name, or if a path was included, verify that the path is correct and
+try again.
+At line:1 char:1
++ rabbitmq-server
++ ~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (rabbitmq-server:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+
+(myshop) PS C:\Users\romanpc\dev\env\env\myshop\myshop> pip install braintree==3.59.0
+Collecting braintree==3.59.0
+  Downloading braintree-3.59.0-py2.py3-none-any.whl (128 kB)
+     |████████████████████████████████| 128 kB 1.7 MB/s
+Collecting requests<3.0,>=0.11.1
+  Downloading requests-2.25.0-py2.py3-none-any.whl (61 kB)
+     |████████████████████████████████| 61 kB 4.0 MB/s
+Collecting chardet<4,>=3.0.2
+  Using cached chardet-3.0.4-py2.py3-none-any.whl (133 kB)
+Collecting certifi>=2017.4.17
+  Downloading certifi-2020.11.8-py2.py3-none-any.whl (155 kB)
+     |████████████████████████████████| 155 kB 6.4 MB/s
+Collecting urllib3<1.27,>=1.21.1
+  Downloading urllib3-1.26.1-py2.py3-none-any.whl (136 kB)
+     |████████████████████████████████| 136 kB 6.4 MB/s
+Collecting idna<3,>=2.5
+  Using cached idna-2.10-py2.py3-none-any.whl (58 kB)
+Installing collected packages: chardet, certifi, urllib3, idna, requests, braintree
+Successfully installed braintree-3.59.0 certifi-2020.11.8 chardet-3.0.4 idna-2.10 requests-2.25.0 urllib3-1.26.1
+WARNING: You are using pip version 20.2.3; however, version 20.2.4 is available.
+You should consider upgrading via the 'C:\Users\romanpc\Dev\env\env\myshop\Scripts\python.exe -m pip install --upgrade pip' command.
+(myshop) PS C:\Users\romanpc\dev\env\env\myshop\myshop> python manage.py startapp payment
+Traceback (most recent call last):
+  File "manage.py", line 21, in <module>
+    main()
+  File "manage.py", line 17, in main
+    execute_from_command_line(sys.argv)
+  File "C:\Users\romanpc\dev\env\env\myshop\lib\site-packages\django\core\management\__init__.py", line 401, in execute_from_command_line
+    utility.execute()
+  File "C:\Users\romanpc\dev\env\env\myshop\lib\site-packages\django\core\management\__init__.py", line 377, in execute
+    django.setup()
+  File "C:\Users\romanpc\dev\env\env\myshop\lib\site-packages\django\__init__.py", line 24, in setup
+    apps.populate(settings.INSTALLED_APPS)
+  File "C:\Users\romanpc\dev\env\env\myshop\lib\site-packages\django\apps\registry.py", line 91, in populate
+    app_config = AppConfig.create(entry)
+  File "C:\Users\romanpc\dev\env\env\myshop\lib\site-packages\django\apps\config.py", line 116, in create
+    mod = import_module(mod_path)
+  File "c:\python38\lib\importlib\__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1014, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 991, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 961, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "<frozen importlib._bootstrap>", line 1014, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 991, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 973, in _find_and_load_unlocked
+ModuleNotFoundError: No module named 'orders'
+(myshop) PS C:\Users\romanpc\dev\env\env\myshop\myshop> ls
+
+
+    Directory: C:\Users\romanpc\dev\env\env\myshop\myshop
+
+
+Mode                LastWriteTime         Length Name
+----                -------------         ------ ----
+d-----       11/11/2020   6:22 PM                cart
+d-----       11/11/2020   4:52 PM                myshop
+d-----       11/11/2020   5:35 PM                shop
+-a----       11/11/2020   4:53 PM         159744 db.sqlite3
+-a----       11/11/2020   9:27 PM            645 manage.py
+
+
+(myshop) PS C:\Users\romanpc\dev\env\env\myshop\myshop> python manage.py startapp payment
+Traceback (most recent call last):
+  File "manage.py", line 21, in <module>
+    main()
+  File "manage.py", line 17, in main
+    execute_from_command_line(sys.argv)
+  File "C:\Users\romanpc\dev\env\env\myshop\lib\site-packages\django\core\management\__init__.py", line 401, in execute_from_command_line
+    utility.execute()
+  File "C:\Users\romanpc\dev\env\env\myshop\lib\site-packages\django\core\management\__init__.py", line 377, in execute
+    django.setup()
+  File "C:\Users\romanpc\dev\env\env\myshop\lib\site-packages\django\__init__.py", line 24, in setup
+    apps.populate(settings.INSTALLED_APPS)
+  File "C:\Users\romanpc\dev\env\env\myshop\lib\site-packages\django\apps\registry.py", line 91, in populate
+    app_config = AppConfig.create(entry)
+  File "C:\Users\romanpc\dev\env\env\myshop\lib\site-packages\django\apps\config.py", line 116, in create
+    mod = import_module(mod_path)
+  File "c:\python38\lib\importlib\__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1014, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 991, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 961, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "<frozen importlib._bootstrap>", line 1014, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 991, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 973, in _find_and_load_unlocked
+ModuleNotFoundError: No module named 'orders'
+(myshop) PS C:\Users\romanpc\dev\env\env\myshop\myshop> python manage.py startapp payment
+Traceback (most recent call last):
+  File "manage.py", line 21, in <module>
+    main()
+  File "manage.py", line 17, in main
+    execute_from_command_line(sys.argv)
+  File "C:\Users\romanpc\dev\env\env\myshop\lib\site-packages\django\core\management\__init__.py", line 401, in execute_from_command_line
+    utility.execute()
+  File "C:\Users\romanpc\dev\env\env\myshop\lib\site-packages\django\core\management\__init__.py", line 377, in execute
+    django.setup()
+  File "C:\Users\romanpc\dev\env\env\myshop\lib\site-packages\django\__init__.py", line 24, in setup
+    apps.populate(settings.INSTALLED_APPS)
+  File "C:\Users\romanpc\dev\env\env\myshop\lib\site-packages\django\apps\registry.py", line 91, in populate
+    app_config = AppConfig.create(entry)
+  File "C:\Users\romanpc\dev\env\env\myshop\lib\site-packages\django\apps\config.py", line 116, in create
+    mod = import_module(mod_path)
+  File "c:\python38\lib\importlib\__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1014, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 991, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 961, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "<frozen importlib._bootstrap>", line 1014, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 991, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 973, in _find_and_load_unlocked
+ModuleNotFoundError: No module named 'orders'
+(myshop) PS C:\Users\romanpc\dev\env\env\myshop\myshop> python manage.py startapp payment
+(myshop) PS C:\Users\romanpc\dev\env\env\myshop\myshop> python manage.py makemigrations
+Traceback (most recent call last):
+  File "manage.py", line 21, in <module>
+    main()
+  File "manage.py", line 17, in main
+    execute_from_command_line(sys.argv)
+  File "C:\Users\romanpc\dev\env\env\myshop\lib\site-packages\django\core\management\__init__.py", line 401, in execute_from_command_line
+    utility.execute()
+  File "C:\Users\romanpc\dev\env\env\myshop\lib\site-packages\django\core\management\__init__.py", line 377, in execute
+    django.setup()
+  File "C:\Users\romanpc\dev\env\env\myshop\lib\site-packages\django\__init__.py", line 24, in setup
+    apps.populate(settings.INSTALLED_APPS)
+  File "C:\Users\romanpc\dev\env\env\myshop\lib\site-packages\django\apps\registry.py", line 114, in populate
+    app_config.import_models()
+  File "C:\Users\romanpc\dev\env\env\myshop\lib\site-packages\django\apps\config.py", line 211, in import_models
+    self.models_module = import_module(models_module_name)
+  File "c:\python38\lib\importlib\__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1014, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 991, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 975, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 671, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 779, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 916, in get_code
+  File "<frozen importlib._bootstrap_external>", line 846, in source_to_code
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "C:\Users\romanpc\dev\env\env\myshop\myshop\orders\models.py", line 15
+    braintree_id = models.CharField(max_length=150, blank=True)
+                                                              ^
+TabError: inconsistent use of tabs and spaces in indentation
+(myshop) PS C:\Users\romanpc\dev\env\env\myshop\myshop> python manage.py makemigrations
+Traceback (most recent call last):
+  File "manage.py", line 21, in <module>
+    main()
+  File "manage.py", line 17, in main
+    execute_from_command_line(sys.argv)
+  File "C:\Users\romanpc\dev\env\env\myshop\lib\site-packages\django\core\management\__init__.py", line 401, in execute_from_command_line
+    utility.execute()
+  File "C:\Users\romanpc\dev\env\env\myshop\lib\site-packages\django\core\management\__init__.py", line 377, in execute
+    django.setup()
+  File "C:\Users\romanpc\dev\env\env\myshop\lib\site-packages\django\__init__.py", line 24, in setup
+    apps.populate(settings.INSTALLED_APPS)
+  File "C:\Users\romanpc\dev\env\env\myshop\lib\site-packages\django\apps\registry.py", line 114, in populate
+    app_config.import_models()
+  File "C:\Users\romanpc\dev\env\env\myshop\lib\site-packages\django\apps\config.py", line 211, in import_models
+    self.models_module = import_module(models_module_name)
+  File "c:\python38\lib\importlib\__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1014, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 991, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 975, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 671, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 779, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 916, in get_code
+  File "<frozen importlib._bootstrap_external>", line 846, in source_to_code
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "C:\Users\romanpc\dev\env\env\myshop\myshop\orders\models.py", line 15
+    braintree_id = models.CharField(max_length=150, blank=True)
+                                                              ^
+TabError: inconsistent use of tabs and spaces in indentation
+(myshop) PS C:\Users\romanpc\dev\env\env\myshop\myshop> python manage.py makemigrations
+Migrations for 'orders':
+  orders\migrations\0002_order_braintree_id.py
+    - Add field braintree_id to order
+(myshop) PS C:\Users\romanpc\dev\env\env\myshop\myshop> python manage.py migrate
+Operations to perform:
+  Apply all migrations: admin, auth, contenttypes, orders, sessions, shop
+Running migrations:
+  Applying orders.0001_initial... OK
+  Applying orders.0002_order_braintree_id... OK
+(myshop) PS C:\Users\romanpc\dev\env\env\myshop\myshop> rabbitmq-server
+rabbitmq-server : The term 'rabbitmq-server' is not recognized as the name of a cmdlet, function, script file, or
+operable program. Check the spelling of the name, or if a path was included, verify that the path is correct and
+try again.
+At line:1 char:1
++ rabbitmq-server
++ ~~~~~~~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (rabbitmq-server:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+
+(myshop) PS C:\Users\romanpc\dev\env\env\myshop\myshop> celery -A myshop worker -1 info
+usage: celery worker [options]
+celery: error: unrecognized arguments: -1 info
+(myshop) PS C:\Users\romanpc\dev\env\env\myshop\myshop> celery -A myshop worker
+
+ -------------- celery@DESKTOP-I1EC0KI v4.4.2 (cliffs)
+--- ***** -----
+-- ******* ---- Windows-10-10.0.18362-SP0 2020-11-11 22:05:07
+- *** --- * ---
+- ** ---------- [config]
+- ** ---------- .> app:         myshop:0x21b258ac3a0
+- ** ---------- .> transport:   amqp://guest:**@localhost:5672//
+- ** ---------- .> results:     disabled://
+- *** --- * --- .> concurrency: 4 (prefork)
+-- ******* ---- .> task events: OFF (enable -E to monitor tasks in this worker)
+--- ***** -----
+ -------------- [queues]
+                .> celery           exchange=celery(direct) key=celery
+
+
+[2020-11-11 22:05:09,387: ERROR/MainProcess] consumer: Cannot connect to amqp://guest:**@127.0.0.1:5672//: [WinError 10061] No connection could be made because the target machine actively refused it.
+Trying again in 2.00 seconds... (1/100)
+
+[2020-11-11 22:05:13,411: ERROR/MainProcess] consumer: Cannot connect to amqp://guest:**@127.0.0.1:5672//: [WinError 10061] No connection could be made because the target machine actively refused it.
+Trying again in 4.00 seconds... (2/100)
+
+(myshop) PS C:\Users\romanpc\dev\env\env\myshop\myshop> python manage.py runserver
+Watching for file changes with StatReloader
+Performing system checks...
+
+System check identified no issues (0 silenced).
+November 11, 2020 - 22:05:27
+Django version 3.0.11, using settings 'myshop.settings'
+Starting development server at http://127.0.0.1:8000/
+Quit the server with CTRL-BREAK.
+Internal Server Error: /
+Traceback (most recent call last):
+  File "C:\Users\romanpc\dev\env\env\myshop\lib\site-packages\django\db\backends\utils.py", line 86, in _execute
+    return self.cursor.execute(sql, params)
+  File "C:\Users\romanpc\dev\env\env\myshop\lib\site-packages\django\db\backends\sqlite3\base.py", line 396, in execute
+    return Database.Cursor.execute(self, query, params)
+sqlite3.OperationalError: no such column: shop_product.description
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\romanpc\dev\env\env\myshop\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "C:\Users\romanpc\dev\env\env\myshop\lib\site-packages\django\core\handlers\base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Users\romanpc\dev\env\env\myshop\lib\site-packages\django\core\handlers\base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\romanpc\dev\env\env\myshop\myshop\shop\views.py", line 13, in product_list
+    return render(request,
+  File "C:\Users\romanpc\dev\env\env\myshop\lib\site-packages\django\shortcuts.py", line 19, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "C:\Users\romanpc\dev\env\env\myshop\lib\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+  File "C:\Users\romanpc\dev\env\env\myshop\lib\site-packages\django\template\backends\django.py", line 61, in render
+    return self.template.render(context)
+  File "C:\Users\romanpc\dev\env\env\myshop\lib\site-packages\django\template\base.py", line 171, in render
+    return self._render(context)
+  File "C:\Users\romanpc\dev\env\env\myshop\lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+  File "C:\Users\romanpc\dev\env\env\myshop\lib\site-packages\django\template\base.py", line 936, in render
+    bit = node.render_annotated(context)
+  File "C:\Users\romanpc\dev\env\env\myshop\lib\site-packages\django\template\base.py", line 903, in render_annotated
+    return self.render(context)
+  File "C:\Users\romanpc\dev\env\env\myshop\lib\site-packages\django\template\loader_tags.py", line 150, in render
+    return compiled_parent._render(context)
+  File "C:\Users\romanpc\dev\env\env\myshop\lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+  File "C:\Users\romanpc\dev\env\env\myshop\lib\site-packages\django\template\base.py", line 936, in render
+    bit = node.render_annotated(context)
+  File "C:\Users\romanpc\dev\env\env\myshop\lib\site-packages\django\template\base.py", line 903, in render_annotated
+    return self.render(context)
+  File "C:\Users\romanpc\dev\env\env\myshop\lib\site-packages\django\template\loader_tags.py", line 62, in render
+    result = block.nodelist.render(context)
+  File "C:\Users\romanpc\dev\env\env\myshop\lib\site-packages\django\template\base.py", line 936, in render
+    bit = node.render_annotated(context)
+  File "C:\Users\romanpc\dev\env\env\myshop\lib\site-packages\django\template\base.py", line 903, in render_annotated
+    return self.render(context)
+  File "C:\Users\romanpc\dev\env\env\myshop\lib\site-packages\django\template\defaulttags.py", line 166, in render
+    len_values = len(values)
+  File "C:\Users\romanpc\dev\env\env\myshop\lib\site-packages\django\db\models\query.py", line 258, in __len__
+    self._fetch_all()
+  File "C:\Users\romanpc\dev\env\env\myshop\lib\site-packages\django\db\models\query.py", line 1261, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+  File "C:\Users\romanpc\dev\env\env\myshop\lib\site-packages\django\db\models\query.py", line 57, in __iter__
+    results = compiler.execute_sql(chunked_fetch=self.chunked_fetch, chunk_size=self.chunk_size)
+  File "C:\Users\romanpc\dev\env\env\myshop\lib\site-packages\django\db\models\sql\compiler.py", line 1154, in execute_sql
+    cursor.execute(sql, params)
+  File "C:\Users\romanpc\dev\env\env\myshop\lib\site-packages\django\db\backends\utils.py", line 100, in execute
+    return super().execute(sql, params)
+  File "C:\Users\romanpc\dev\env\env\myshop\lib\site-packages\django\db\backends\utils.py", line 68, in execute
+    return self._execute_with_wrappers(sql, params, many=False, executor=self._execute)
+  File "C:\Users\romanpc\dev\env\env\myshop\lib\site-packages\django\db\backends\utils.py", line 77, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "C:\Users\romanpc\dev\env\env\myshop\lib\site-packages\django\db\backends\utils.py", line 86, in _execute
+    return self.cursor.execute(sql, params)
+  File "C:\Users\romanpc\dev\env\env\myshop\lib\site-packages\django\db\utils.py", line 90, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "C:\Users\romanpc\dev\env\env\myshop\lib\site-packages\django\db\backends\utils.py", line 86, in _execute
+    return self.cursor.execute(sql, params)
+  File "C:\Users\romanpc\dev\env\env\myshop\lib\site-packages\django\db\backends\sqlite3\base.py", line 396, in execute
+    return Database.Cursor.execute(self, query, params)
+django.db.utils.OperationalError: no such column: shop_product.description
+[11/Nov/2020 22:05:32] "GET / HTTP/1.1" 500 200646
+Not Found: /favicon.ico
+[11/Nov/2020 22:05:32] "GET /favicon.ico HTTP/1.1" 404 2888
+(myshop) PS C:\Users\romanpc\dev\env\env\myshop\myshop> celery -Amyshop worker -l info
+usage: celery <command> [options]
+
+Show help screen and exit.
+
+positional arguments:
+  args
+
+optional arguments:
+  -h, --help            show this help message and exit
+  --version             show program's version number and exit
+
+Global Options:
+  -A APP, --app APP
+  -b BROKER, --broker BROKER
+  --result-backend RESULT_BACKEND
+  --loader LOADER
+  --config CONFIG
+  --workdir WORKDIR
+  --no-color, -C
+  --quiet, -q
+
+---- -- - - ---- Commands- -------------- --- ------------
+
++ Main:
+|    celery worker
+|    celery events
+|    celery beat
+|    celery shell
+|    celery multi
+|    celery amqp
+
++ Remote Control:
+|    celery status
+
+|    celery inspect --help
+|    celery inspect active
+|    celery inspect active_queues
+|    celery inspect clock
+|    celery inspect conf [include_defaults=False]
+|    celery inspect memdump [n_samples=10]
+|    celery inspect memsample
+|    celery inspect objgraph [object_type=Request] [num=200 [max_depth=10]]
+|    celery inspect ping
+|    celery inspect query_task [id1 [id2 [... [idN]]]]
+|    celery inspect registered [attr1 [attr2 [... [attrN]]]]
+|    celery inspect report
+|    celery inspect reserved
+|    celery inspect revoked
+|    celery inspect scheduled
+|    celery inspect stats
+
+|    celery control --help
+|    celery control add_consumer <queue> [exchange [type [routing_key]]]
+|    celery control autoscale [max [min]]
+|    celery control cancel_consumer <queue>
+|    celery control disable_events
+|    celery control election
+|    celery control enable_events
+|    celery control heartbeat
+|    celery control pool_grow [N=1]
+|    celery control pool_restart
+|    celery control pool_shrink [N=1]
+|    celery control rate_limit <task_name> <rate_limit (e.g., 5/s | 5/m | 5/h)>
+|    celery control revoke [id1 [id2 [... [idN]]]]
+|    celery control shutdown
+|    celery control terminate <signal> [id1 [id2 [... [idN]]]]
+|    celery control time_limit <task_name> <soft_secs> [hard_secs]
+
++ Utils:
+|    celery purge
+|    celery list
+|    celery call
+|    celery result
+|    celery migrate
+|    celery graph
+|    celery upgrade
+
++ Debugging:
+|    celery report
+|    celery logtool
+---- -- - - --------- -- - -------------- --- ------------
+
+Type 'celery <command> --help' for help using a specific command.
+
+(myshop) PS C:\Users\romanpc\dev\env\env\myshop\myshop> python manage.py runserver
+Watching for file changes with StatReloader
+Performing system checks...
+
+System check identified no issues (0 silenced).
+November 11, 2020 - 22:06:06
+Django version 3.0.11, using settings 'myshop.settings'
+Starting development server at http://127.0.0.1:8000/
+Quit the server with CTRL-BREAK.
+Internal Server Error: /
+Traceback (most recent call last):
+  File "C:\Users\romanpc\dev\env\env\myshop\lib\site-packages\django\db\backends\utils.py", line 86, in _execute
+    return self.cursor.execute(sql, params)
+  File "C:\Users\romanpc\dev\env\env\myshop\lib\site-packages\django\db\backends\sqlite3\base.py", line 396, in execute
+    return Database.Cursor.execute(self, query, params)
+sqlite3.OperationalError: no such column: shop_product.description
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\romanpc\dev\env\env\myshop\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "C:\Users\romanpc\dev\env\env\myshop\lib\site-packages\django\core\handlers\base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Users\romanpc\dev\env\env\myshop\lib\site-packages\django\core\handlers\base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\romanpc\dev\env\env\myshop\myshop\shop\views.py", line 13, in product_list
+    return render(request,
+  File "C:\Users\romanpc\dev\env\env\myshop\lib\site-packages\django\shortcuts.py", line 19, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "C:\Users\romanpc\dev\env\env\myshop\lib\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+  File "C:\Users\romanpc\dev\env\env\myshop\lib\site-packages\django\template\backends\django.py", line 61, in render
+    return self.template.render(context)
+  File "C:\Users\romanpc\dev\env\env\myshop\lib\site-packages\django\template\base.py", line 171, in render
+    return self._render(context)
+  File "C:\Users\romanpc\dev\env\env\myshop\lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+  File "C:\Users\romanpc\dev\env\env\myshop\lib\site-packages\django\template\base.py", line 936, in render
+    bit = node.render_annotated(context)
+  File "C:\Users\romanpc\dev\env\env\myshop\lib\site-packages\django\template\base.py", line 903, in render_annotated
+    return self.render(context)
+  File "C:\Users\romanpc\dev\env\env\myshop\lib\site-packages\django\template\loader_tags.py", line 150, in render
+    return compiled_parent._render(context)
+  File "C:\Users\romanpc\dev\env\env\myshop\lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+  File "C:\Users\romanpc\dev\env\env\myshop\lib\site-packages\django\template\base.py", line 936, in render
+    bit = node.render_annotated(context)
+  File "C:\Users\romanpc\dev\env\env\myshop\lib\site-packages\django\template\base.py", line 903, in render_annotated
+    return self.render(context)
+  File "C:\Users\romanpc\dev\env\env\myshop\lib\site-packages\django\template\loader_tags.py", line 62, in render
+    result = block.nodelist.render(context)
+  File "C:\Users\romanpc\dev\env\env\myshop\lib\site-packages\django\template\base.py", line 936, in render
+    bit = node.render_annotated(context)
+  File "C:\Users\romanpc\dev\env\env\myshop\lib\site-packages\django\template\base.py", line 903, in render_annotated
+    return self.render(context)
+  File "C:\Users\romanpc\dev\env\env\myshop\lib\site-packages\django\template\defaulttags.py", line 166, in render
+    len_values = len(values)
+  File "C:\Users\romanpc\dev\env\env\myshop\lib\site-packages\django\db\models\query.py", line 258, in __len__
+    self._fetch_all()
+  File "C:\Users\romanpc\dev\env\env\myshop\lib\site-packages\django\db\models\query.py", line 1261, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+  File "C:\Users\romanpc\dev\env\env\myshop\lib\site-packages\django\db\models\query.py", line 57, in __iter__
+    results = compiler.execute_sql(chunked_fetch=self.chunked_fetch, chunk_size=self.chunk_size)
+  File "C:\Users\romanpc\dev\env\env\myshop\lib\site-packages\django\db\models\sql\compiler.py", line 1154, in execute_sql
+    cursor.execute(sql, params)
+  File "C:\Users\romanpc\dev\env\env\myshop\lib\site-packages\django\db\backends\utils.py", line 100, in execute
+    return super().execute(sql, params)
+  File "C:\Users\romanpc\dev\env\env\myshop\lib\site-packages\django\db\backends\utils.py", line 68, in execute
+    return self._execute_with_wrappers(sql, params, many=False, executor=self._execute)
+  File "C:\Users\romanpc\dev\env\env\myshop\lib\site-packages\django\db\backends\utils.py", line 77, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "C:\Users\romanpc\dev\env\env\myshop\lib\site-packages\django\db\backends\utils.py", line 86, in _execute
+    return self.cursor.execute(sql, params)
+  File "C:\Users\romanpc\dev\env\env\myshop\lib\site-packages\django\db\utils.py", line 90, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "C:\Users\romanpc\dev\env\env\myshop\lib\site-packages\django\db\backends\utils.py", line 86, in _execute
+    return self.cursor.execute(sql, params)
+  File "C:\Users\romanpc\dev\env\env\myshop\lib\site-packages\django\db\backends\sqlite3\base.py", line 396, in execute
+    return Database.Cursor.execute(self, query, params)
+django.db.utils.OperationalError: no such column: shop_product.description
+[11/Nov/2020 22:06:08] "GET / HTTP/1.1" 500 200783
+Internal Server Error: /
+Traceback (most recent call last):
+  File "C:\Users\romanpc\dev\env\env\myshop\lib\site-packages\django\db\backends\utils.py", line 86, in _execute
+    return self.cursor.execute(sql, params)
+  File "C:\Users\romanpc\dev\env\env\myshop\lib\site-packages\django\db\backends\sqlite3\base.py", line 396, in execute
+    return Database.Cursor.execute(self, query, params)
+sqlite3.OperationalError: no such column: shop_product.description
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\romanpc\dev\env\env\myshop\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "C:\Users\romanpc\dev\env\env\myshop\lib\site-packages\django\core\handlers\base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Users\romanpc\dev\env\env\myshop\lib\site-packages\django\core\handlers\base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\romanpc\dev\env\env\myshop\myshop\shop\views.py", line 13, in product_list
+    return render(request,
+  File "C:\Users\romanpc\dev\env\env\myshop\lib\site-packages\django\shortcuts.py", line 19, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "C:\Users\romanpc\dev\env\env\myshop\lib\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+  File "C:\Users\romanpc\dev\env\env\myshop\lib\site-packages\django\template\backends\django.py", line 61, in render
+    return self.template.render(context)
+  File "C:\Users\romanpc\dev\env\env\myshop\lib\site-packages\django\template\base.py", line 171, in render
+    return self._render(context)
+  File "C:\Users\romanpc\dev\env\env\myshop\lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+  File "C:\Users\romanpc\dev\env\env\myshop\lib\site-packages\django\template\base.py", line 936, in render
+    bit = node.render_annotated(context)
+  File "C:\Users\romanpc\dev\env\env\myshop\lib\site-packages\django\template\base.py", line 903, in render_annotated
+    return self.render(context)
+  File "C:\Users\romanpc\dev\env\env\myshop\lib\site-packages\django\template\loader_tags.py", line 150, in render
+    return compiled_parent._render(context)
+  File "C:\Users\romanpc\dev\env\env\myshop\lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+  File "C:\Users\romanpc\dev\env\env\myshop\lib\site-packages\django\template\base.py", line 936, in render
+    bit = node.render_annotated(context)
+  File "C:\Users\romanpc\dev\env\env\myshop\lib\site-packages\django\template\base.py", line 903, in render_annotated
+    return self.render(context)
+  File "C:\Users\romanpc\dev\env\env\myshop\lib\site-packages\django\template\loader_tags.py", line 62, in render
+    result = block.nodelist.render(context)
+  File "C:\Users\romanpc\dev\env\env\myshop\lib\site-packages\django\template\base.py", line 936, in render
+    bit = node.render_annotated(context)
+  File "C:\Users\romanpc\dev\env\env\myshop\lib\site-packages\django\template\base.py", line 903, in render_annotated
+    return self.render(context)
+  File "C:\Users\romanpc\dev\env\env\myshop\lib\site-packages\django\template\defaulttags.py", line 166, in render
+    len_values = len(values)
+  File "C:\Users\romanpc\dev\env\env\myshop\lib\site-packages\django\db\models\query.py", line 258, in __len__
+    self._fetch_all()
+  File "C:\Users\romanpc\dev\env\env\myshop\lib\site-packages\django\db\models\query.py", line 1261, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+  File "C:\Users\romanpc\dev\env\env\myshop\lib\site-packages\django\db\models\query.py", line 57, in __iter__
+    results = compiler.execute_sql(chunked_fetch=self.chunked_fetch, chunk_size=self.chunk_size)
+  File "C:\Users\romanpc\dev\env\env\myshop\lib\site-packages\django\db\models\sql\compiler.py", line 1154, in execute_sql
+    cursor.execute(sql, params)
+  File "C:\Users\romanpc\dev\env\env\myshop\lib\site-packages\django\db\backends\utils.py", line 100, in execute
+    return super().execute(sql, params)
+  File "C:\Users\romanpc\dev\env\env\myshop\lib\site-packages\django\db\backends\utils.py", line 68, in execute
+    return self._execute_with_wrappers(sql, params, many=False, executor=self._execute)
+  File "C:\Users\romanpc\dev\env\env\myshop\lib\site-packages\django\db\backends\utils.py", line 77, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "C:\Users\romanpc\dev\env\env\myshop\lib\site-packages\django\db\backends\utils.py", line 86, in _execute
+    return self.cursor.execute(sql, params)
+  File "C:\Users\romanpc\dev\env\env\myshop\lib\site-packages\django\db\utils.py", line 90, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "C:\Users\romanpc\dev\env\env\myshop\lib\site-packages\django\db\backends\utils.py", line 86, in _execute
+    return self.cursor.execute(sql, params)
+  File "C:\Users\romanpc\dev\env\env\myshop\lib\site-packages\django\db\backends\sqlite3\base.py", line 396, in execute
+    return Database.Cursor.execute(self, query, params)
+django.db.utils.OperationalError: no such column: shop_product.description
+[11/Nov/2020 22:06:10] "GET / HTTP/1.1" 500 200783
+C:\Users\romanpc\Dev\env\env\myshop\myshop\orders\admin.py changed, reloading.
+Watching for file changes with StatReloader
+Performing system checks...
+
+System check identified no issues (0 silenced).
+November 11, 2020 - 22:11:29
+Django version 3.0.11, using settings 'myshop.settings'
+Starting development server at http://127.0.0.1:8000/
+Quit the server with CTRL-BREAK.
+(myshop) PS C:\Users\romanpc\dev\env\env\myshop\myshop> python manage.py runserver
+Watching for file changes with StatReloader
+Performing system checks...
+
+System check identified no issues (0 silenced).
+November 11, 2020 - 22:11:49
+Django version 3.0.11, using settings 'myshop.settings'
+Starting development server at http://127.0.0.1:8000/
+Quit the server with CTRL-BREAK.
+Internal Server Error: /
+Traceback (most recent call last):
+  File "C:\Users\romanpc\dev\env\env\myshop\lib\site-packages\django\db\backends\utils.py", line 86, in _execute
+    return self.cursor.execute(sql, params)
+  File "C:\Users\romanpc\dev\env\env\myshop\lib\site-packages\django\db\backends\sqlite3\base.py", line 396, in execute
+    return Database.Cursor.execute(self, query, params)
+sqlite3.OperationalError: no such column: shop_product.description
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\romanpc\dev\env\env\myshop\lib\site-packages\django\core\handlers\exception.py", line 34, in inner
+    response = get_response(request)
+  File "C:\Users\romanpc\dev\env\env\myshop\lib\site-packages\django\core\handlers\base.py", line 115, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "C:\Users\romanpc\dev\env\env\myshop\lib\site-packages\django\core\handlers\base.py", line 113, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "C:\Users\romanpc\dev\env\env\myshop\myshop\shop\views.py", line 13, in product_list
+    return render(request,
+  File "C:\Users\romanpc\dev\env\env\myshop\lib\site-packages\django\shortcuts.py", line 19, in render
+    content = loader.render_to_string(template_name, context, request, using=using)
+  File "C:\Users\romanpc\dev\env\env\myshop\lib\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+  File "C:\Users\romanpc\dev\env\env\myshop\lib\site-packages\django\template\backends\django.py", line 61, in render
+    return self.template.render(context)
+  File "C:\Users\romanpc\dev\env\env\myshop\lib\site-packages\django\template\base.py", line 171, in render
+    return self._render(context)
+  File "C:\Users\romanpc\dev\env\env\myshop\lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+  File "C:\Users\romanpc\dev\env\env\myshop\lib\site-packages\django\template\base.py", line 936, in render
+    bit = node.render_annotated(context)
+  File "C:\Users\romanpc\dev\env\env\myshop\lib\site-packages\django\template\base.py", line 903, in render_annotated
+    return self.render(context)
+  File "C:\Users\romanpc\dev\env\env\myshop\lib\site-packages\django\template\loader_tags.py", line 150, in render
+    return compiled_parent._render(context)
+  File "C:\Users\romanpc\dev\env\env\myshop\lib\site-packages\django\template\base.py", line 163, in _render
+    return self.nodelist.render(context)
+  File "C:\Users\romanpc\dev\env\env\myshop\lib\site-packages\django\template\base.py", line 936, in render
+    bit = node.render_annotated(context)
+  File "C:\Users\romanpc\dev\env\env\myshop\lib\site-packages\django\template\base.py", line 903, in render_annotated
+    return self.render(context)
+  File "C:\Users\romanpc\dev\env\env\myshop\lib\site-packages\django\template\loader_tags.py", line 62, in render
+    result = block.nodelist.render(context)
+  File "C:\Users\romanpc\dev\env\env\myshop\lib\site-packages\django\template\base.py", line 936, in render
+    bit = node.render_annotated(context)
+  File "C:\Users\romanpc\dev\env\env\myshop\lib\site-packages\django\template\base.py", line 903, in render_annotated
+    return self.render(context)
+  File "C:\Users\romanpc\dev\env\env\myshop\lib\site-packages\django\template\defaulttags.py", line 166, in render
+    len_values = len(values)
+  File "C:\Users\romanpc\dev\env\env\myshop\lib\site-packages\django\db\models\query.py", line 258, in __len__
+    self._fetch_all()
+  File "C:\Users\romanpc\dev\env\env\myshop\lib\site-packages\django\db\models\query.py", line 1261, in _fetch_all
+    self._result_cache = list(self._iterable_class(self))
+  File "C:\Users\romanpc\dev\env\env\myshop\lib\site-packages\django\db\models\query.py", line 57, in __iter__
+    results = compiler.execute_sql(chunked_fetch=self.chunked_fetch, chunk_size=self.chunk_size)
+  File "C:\Users\romanpc\dev\env\env\myshop\lib\site-packages\django\db\models\sql\compiler.py", line 1154, in execute_sql
+    cursor.execute(sql, params)
+  File "C:\Users\romanpc\dev\env\env\myshop\lib\site-packages\django\db\backends\utils.py", line 100, in execute
+    return super().execute(sql, params)
+  File "C:\Users\romanpc\dev\env\env\myshop\lib\site-packages\django\db\backends\utils.py", line 68, in execute
+    return self._execute_with_wrappers(sql, params, many=False, executor=self._execute)
+  File "C:\Users\romanpc\dev\env\env\myshop\lib\site-packages\django\db\backends\utils.py", line 77, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "C:\Users\romanpc\dev\env\env\myshop\lib\site-packages\django\db\backends\utils.py", line 86, in _execute
+    return self.cursor.execute(sql, params)
+  File "C:\Users\romanpc\dev\env\env\myshop\lib\site-packages\django\db\utils.py", line 90, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "C:\Users\romanpc\dev\env\env\myshop\lib\site-packages\django\db\backends\utils.py", line 86, in _execute
+    return self.cursor.execute(sql, params)
+  File "C:\Users\romanpc\dev\env\env\myshop\lib\site-packages\django\db\backends\sqlite3\base.py", line 396, in execute
+    return Database.Cursor.execute(self, query, params)
+django.db.utils.OperationalError: no such column: shop_product.description
+[11/Nov/2020 22:12:04] "GET / HTTP/1.1" 500 200783
+C:\Users\romanpc\Dev\env\env\myshop\myshop\orders\views.py changed, reloading.
+Watching for file changes with StatReloader
+Performing system checks...
+
+Exception in thread django-main-thread:
+Traceback (most recent call last):
+  File "c:\python38\lib\threading.py", line 932, in _bootstrap_inner
+    self.run()
+  File "c:\python38\lib\threading.py", line 870, in run
+    self._target(*self._args, **self._kwargs)
+  File "C:\Users\romanpc\dev\env\env\myshop\lib\site-packages\django\utils\autoreload.py", line 53, in wrapper
+    fn(*args, **kwargs)
+  File "C:\Users\romanpc\dev\env\env\myshop\lib\site-packages\django\core\management\commands\runserver.py", line 117, in inner_run
+    self.check(display_num_errors=True)
+  File "C:\Users\romanpc\dev\env\env\myshop\lib\site-packages\django\core\management\base.py", line 392, in check
+    all_issues = self._run_checks(
+  File "C:\Users\romanpc\dev\env\env\myshop\lib\site-packages\django\core\management\base.py", line 382, in _run_checks
+    return checks.run_checks(**kwargs)
+  File "C:\Users\romanpc\dev\env\env\myshop\lib\site-packages\django\core\checks\registry.py", line 72, in run_checks
+    new_errors = check(app_configs=app_configs)
+  File "C:\Users\romanpc\dev\env\env\myshop\lib\site-packages\django\core\checks\urls.py", line 40, in check_url_namespaces_unique
+    all_namespaces = _load_all_namespaces(resolver)
+  File "C:\Users\romanpc\dev\env\env\myshop\lib\site-packages\django\core\checks\urls.py", line 57, in _load_all_namespaces
+    url_patterns = getattr(resolver, 'url_patterns', [])
+  File "C:\Users\romanpc\dev\env\env\myshop\lib\site-packages\django\utils\functional.py", line 48, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "C:\Users\romanpc\dev\env\env\myshop\lib\site-packages\django\urls\resolvers.py", line 588, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "C:\Users\romanpc\dev\env\env\myshop\lib\site-packages\django\utils\functional.py", line 48, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "C:\Users\romanpc\dev\env\env\myshop\lib\site-packages\django\urls\resolvers.py", line 581, in urlconf_module
+    return import_module(self.urlconf_name)
+  File "c:\python38\lib\importlib\__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1014, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 991, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 975, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 671, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 783, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "C:\Users\romanpc\dev\env\env\myshop\myshop\myshop\urls.py", line 9, in <module>
+    path('orders/', include('orders.urls', namespace='orders')),
+  File "C:\Users\romanpc\dev\env\env\myshop\lib\site-packages\django\urls\conf.py", line 34, in include
+    urlconf_module = import_module(urlconf_module)
+  File "c:\python38\lib\importlib\__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1014, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 991, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 975, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 671, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 783, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "C:\Users\romanpc\dev\env\env\myshop\myshop\orders\urls.py", line 2, in <module>
+    from . import views
+  File "C:\Users\romanpc\dev\env\env\myshop\myshop\orders\views.py", line 1, in <module>
+    import weasyprint
+ModuleNotFoundError: No module named 'weasyprint'
+C:\Users\romanpc\Dev\env\env\myshop\myshop\orders\admin.py changed, reloading.
+Watching for file changes with StatReloader
+Performing system checks...
+
+Exception in thread django-main-thread:
+Traceback (most recent call last):
+  File "c:\python38\lib\threading.py", line 932, in _bootstrap_inner
+    self.run()
+  File "c:\python38\lib\threading.py", line 870, in run
+    self._target(*self._args, **self._kwargs)
+  File "C:\Users\romanpc\dev\env\env\myshop\lib\site-packages\django\utils\autoreload.py", line 53, in wrapper
+    fn(*args, **kwargs)
+  File "C:\Users\romanpc\dev\env\env\myshop\lib\site-packages\django\core\management\commands\runserver.py", line 117, in inner_run
+    self.check(display_num_errors=True)
+  File "C:\Users\romanpc\dev\env\env\myshop\lib\site-packages\django\core\management\base.py", line 392, in check
+    all_issues = self._run_checks(
+  File "C:\Users\romanpc\dev\env\env\myshop\lib\site-packages\django\core\management\base.py", line 382, in _run_checks
+    return checks.run_checks(**kwargs)
+  File "C:\Users\romanpc\dev\env\env\myshop\lib\site-packages\django\core\checks\registry.py", line 72, in run_checks
+    new_errors = check(app_configs=app_configs)
+  File "C:\Users\romanpc\dev\env\env\myshop\lib\site-packages\django\core\checks\urls.py", line 40, in check_url_namespaces_unique
+    all_namespaces = _load_all_namespaces(resolver)
+  File "C:\Users\romanpc\dev\env\env\myshop\lib\site-packages\django\core\checks\urls.py", line 57, in _load_all_namespaces
+    url_patterns = getattr(resolver, 'url_patterns', [])
+  File "C:\Users\romanpc\dev\env\env\myshop\lib\site-packages\django\utils\functional.py", line 48, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "C:\Users\romanpc\dev\env\env\myshop\lib\site-packages\django\urls\resolvers.py", line 588, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "C:\Users\romanpc\dev\env\env\myshop\lib\site-packages\django\utils\functional.py", line 48, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "C:\Users\romanpc\dev\env\env\myshop\lib\site-packages\django\urls\resolvers.py", line 581, in urlconf_module
+    return import_module(self.urlconf_name)
+  File "c:\python38\lib\importlib\__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1014, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 991, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 975, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 671, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 783, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "C:\Users\romanpc\dev\env\env\myshop\myshop\myshop\urls.py", line 9, in <module>
+    path('orders/', include('orders.urls', namespace='orders')),
+  File "C:\Users\romanpc\dev\env\env\myshop\lib\site-packages\django\urls\conf.py", line 34, in include
+    urlconf_module = import_module(urlconf_module)
+  File "c:\python38\lib\importlib\__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1014, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 991, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 975, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 671, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 783, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "C:\Users\romanpc\dev\env\env\myshop\myshop\orders\urls.py", line 2, in <module>
+    from . import views
+  File "C:\Users\romanpc\dev\env\env\myshop\myshop\orders\views.py", line 1, in <module>
+    import weasyprint
+ModuleNotFoundError: No module named 'weasyprint'
+(myshop) PS C:\Users\romanpc\dev\env\env\myshop\myshop> python manage.py runserver
+Watching for file changes with StatReloader
+Performing system checks...
+
+Exception in thread django-main-thread:
+Traceback (most recent call last):
+  File "c:\python38\lib\threading.py", line 932, in _bootstrap_inner
+    self.run()
+  File "c:\python38\lib\threading.py", line 870, in run
+    self._target(*self._args, **self._kwargs)
+  File "C:\Users\romanpc\dev\env\env\myshop\lib\site-packages\django\utils\autoreload.py", line 53, in wrapper
+    fn(*args, **kwargs)
+  File "C:\Users\romanpc\dev\env\env\myshop\lib\site-packages\django\core\management\commands\runserver.py", line 117, in inner_run
+    self.check(display_num_errors=True)
+  File "C:\Users\romanpc\dev\env\env\myshop\lib\site-packages\django\core\management\base.py", line 392, in check
+    all_issues = self._run_checks(
+  File "C:\Users\romanpc\dev\env\env\myshop\lib\site-packages\django\core\management\base.py", line 382, in _run_checks
+    return checks.run_checks(**kwargs)
+  File "C:\Users\romanpc\dev\env\env\myshop\lib\site-packages\django\core\checks\registry.py", line 72, in run_checks
+    new_errors = check(app_configs=app_configs)
+  File "C:\Users\romanpc\dev\env\env\myshop\lib\site-packages\django\core\checks\urls.py", line 40, in check_url_namespaces_unique
+    all_namespaces = _load_all_namespaces(resolver)
+  File "C:\Users\romanpc\dev\env\env\myshop\lib\site-packages\django\core\checks\urls.py", line 57, in _load_all_namespaces
+    url_patterns = getattr(resolver, 'url_patterns', [])
+  File "C:\Users\romanpc\dev\env\env\myshop\lib\site-packages\django\utils\functional.py", line 48, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "C:\Users\romanpc\dev\env\env\myshop\lib\site-packages\django\urls\resolvers.py", line 588, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "C:\Users\romanpc\dev\env\env\myshop\lib\site-packages\django\utils\functional.py", line 48, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "C:\Users\romanpc\dev\env\env\myshop\lib\site-packages\django\urls\resolvers.py", line 581, in urlconf_module
+    return import_module(self.urlconf_name)
+  File "c:\python38\lib\importlib\__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1014, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 991, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 975, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 671, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 783, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "C:\Users\romanpc\dev\env\env\myshop\myshop\myshop\urls.py", line 9, in <module>
+    path('orders/', include('orders.urls', namespace='orders')),
+  File "C:\Users\romanpc\dev\env\env\myshop\lib\site-packages\django\urls\conf.py", line 34, in include
+    urlconf_module = import_module(urlconf_module)
+  File "c:\python38\lib\importlib\__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1014, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 991, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 975, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 671, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 783, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "C:\Users\romanpc\dev\env\env\myshop\myshop\orders\urls.py", line 2, in <module>
+    from . import views
+  File "C:\Users\romanpc\dev\env\env\myshop\myshop\orders\views.py", line 1, in <module>
+    import weasyprint
+ModuleNotFoundError: No module named 'weasyprint'
+(myshop) PS C:\Users\romanpc\dev\env\env\myshop\myshop> pip install WeasyPrint==51
+Collecting WeasyPrint==51
+  Downloading WeasyPrint-51-py3-none-any.whl (359 kB)
+     |████████████████████████████████| 359 kB 2.2 MB/s
+Collecting CairoSVG>=2.4.0
+  Downloading CairoSVG-2.5.0-py3-none-any.whl (45 kB)
+     |████████████████████████████████| 45 kB 3.2 MB/s
+Collecting cffi>=0.6
+  Using cached cffi-1.14.3-cp38-cp38-win_amd64.whl (179 kB)
+Collecting html5lib>=0.999999999
+  Downloading html5lib-1.1-py2.py3-none-any.whl (112 kB)
+     |████████████████████████████████| 112 kB ...
+Requirement already satisfied: setuptools>=39.2.0 in c:\users\romanpc\dev\env\env\myshop\lib\site-packages (from WeasyPrint==51) (50.3.0)
+Collecting cssselect2>=0.1
+  Downloading cssselect2-0.4.1-py3-none-any.whl (13 kB)
+Collecting tinycss2>=1.0.0
+  Downloading tinycss2-1.1.0-py3-none-any.whl (21 kB)
+Collecting Pyphen>=0.9.1
+  Downloading Pyphen-0.10.0-py3-none-any.whl (1.9 MB)
+     |████████████████████████████████| 1.9 MB 6.4 MB/s
+Collecting cairocffi>=0.9.0
+  Downloading cairocffi-1.2.0.tar.gz (70 kB)
+     |████████████████████████████████| 70 kB 3.9 MB/s
+Collecting defusedxml
+  Downloading defusedxml-0.6.0-py2.py3-none-any.whl (23 kB)
+Requirement already satisfied: pillow in c:\users\romanpc\dev\env\env\myshop\lib\site-packages (from CairoSVG>=2.4.0->WeasyPrint==51) (7.0.0)
+Collecting pycparser
+  Using cached pycparser-2.20-py2.py3-none-any.whl (112 kB)
+Collecting six>=1.9
+  Using cached six-1.15.0-py2.py3-none-any.whl (10 kB)
+Collecting webencodings
+  Downloading webencodings-0.5.1-py2.py3-none-any.whl (11 kB)
+Building wheels for collected packages: cairocffi
+  Building wheel for cairocffi (setup.py) ... done
+  Created wheel for cairocffi: filename=cairocffi-1.2.0-py3-none-any.whl size=89568 sha256=9c36f4aca7a187264aee60894b91843e2797033be93d5947b66afd48ef58e597
+  Stored in directory: c:\users\romanpc\appdata\local\pip\cache\wheels\e8\fa\11\ae7a999afd58d7169974c79b765f4f03880c184d578b1ed445
+Successfully built cairocffi
+Installing collected packages: defusedxml, pycparser, cffi, cairocffi, webencodings, tinycss2, cssselect2, CairoSVG, six, html5lib, Pyphen, WeasyPrint
+Successfully installed CairoSVG-2.5.0 Pyphen-0.10.0 WeasyPrint-51 cairocffi-1.2.0 cffi-1.14.3 cssselect2-0.4.1 defusedxml-0.6.0 html5lib-1.1 pycparser-2.20 six-1.15.0 tinycss2-1.1.0 webencodings-0.5.1
+WARNING: You are using pip version 20.2.3; however, version 20.2.4 is available.
+You should consider upgrading via the 'C:\Users\romanpc\Dev\env\env\myshop\Scripts\python.exe -m pip install --upgrade pip' command.
+(myshop) PS C:\Users\romanpc\dev\env\env\myshop\myshop> pip install WeasyPrint==51
+Requirement already satisfied: WeasyPrint==51 in c:\users\romanpc\dev\env\env\myshop\lib\site-packages (51)
+Requirement already satisfied: cffi>=0.6 in c:\users\romanpc\dev\env\env\myshop\lib\site-packages (from WeasyPrint==51) (1.14.3)
+Requirement already satisfied: html5lib>=0.999999999 in c:\users\romanpc\dev\env\env\myshop\lib\site-packages (from WeasyPrint==51) (1.1)
+Requirement already satisfied: tinycss2>=1.0.0 in c:\users\romanpc\dev\env\env\myshop\lib\site-packages (from WeasyPrint==51) (1.1.0)
+Requirement already satisfied: CairoSVG>=2.4.0 in c:\users\romanpc\dev\env\env\myshop\lib\site-packages (from WeasyPrint==51) (2.5.0)
+Requirement already satisfied: Pyphen>=0.9.1 in c:\users\romanpc\dev\env\env\myshop\lib\site-packages (from WeasyPrint==51) (0.10.0)
+Requirement already satisfied: cairocffi>=0.9.0 in c:\users\romanpc\dev\env\env\myshop\lib\site-packages (from WeasyPrint==51) (1.2.0)
+Requirement already satisfied: setuptools>=39.2.0 in c:\users\romanpc\dev\env\env\myshop\lib\site-packages (from WeasyPrint==51) (50.3.0)
+Requirement already satisfied: cssselect2>=0.1 in c:\users\romanpc\dev\env\env\myshop\lib\site-packages (from WeasyPrint==51) (0.4.1)
+Requirement already satisfied: pycparser in c:\users\romanpc\dev\env\env\myshop\lib\site-packages (from cffi>=0.6->WeasyPrint==51) (2.20)
+Requirement already satisfied: six>=1.9 in c:\users\romanpc\dev\env\env\myshop\lib\site-packages (from html5lib>=0.999999999->WeasyPrint==51) (1.15.0)
+Requirement already satisfied: webencodings in c:\users\romanpc\dev\env\env\myshop\lib\site-packages (from html5lib>=0.999999999->WeasyPrint==51) (0.5.1)
+Requirement already satisfied: pillow in c:\users\romanpc\dev\env\env\myshop\lib\site-packages (from CairoSVG>=2.4.0->WeasyPrint==51) (7.0.0)
+Requirement already satisfied: defusedxml in c:\users\romanpc\dev\env\env\myshop\lib\site-packages (from CairoSVG>=2.4.0->WeasyPrint==51) (0.6.0)
+WARNING: You are using pip version 20.2.3; however, version 20.2.4 is available.
+You should consider upgrading via the 'C:\Users\romanpc\Dev\env\env\myshop\Scripts\python.exe -m pip install --upgrade pip' command.
+(myshop) PS C:\Users\romanpc\dev\env\env\myshop\myshop> python manage.py collectstatic
+Traceback (most recent call last):
+  File "manage.py", line 21, in <module>
+    main()
+  File "manage.py", line 17, in main
+    execute_from_command_line(sys.argv)
+  File "C:\Users\romanpc\dev\env\env\myshop\lib\site-packages\django\core\management\__init__.py", line 401, in execute_from_command_line
+    utility.execute()
+  File "C:\Users\romanpc\dev\env\env\myshop\lib\site-packages\django\core\management\__init__.py", line 345, in execute
+    settings.INSTALLED_APPS
+  File "C:\Users\romanpc\dev\env\env\myshop\lib\site-packages\django\conf\__init__.py", line 76, in __getattr__
+    self._setup(name)
+  File "C:\Users\romanpc\dev\env\env\myshop\lib\site-packages\django\conf\__init__.py", line 63, in _setup
+    self._wrapped = Settings(settings_module)
+  File "C:\Users\romanpc\dev\env\env\myshop\lib\site-packages\django\conf\__init__.py", line 142, in __init__
+    mod = importlib.import_module(self.SETTINGS_MODULE)
+  File "c:\python38\lib\importlib\__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1014, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 991, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 975, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 671, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 783, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "C:\Users\romanpc\dev\env\env\myshop\myshop\myshop\settings.py", line 140, in <module>
+    BRAINTREE_CONF = braintree.Configuration(
+  File "C:\Users\romanpc\dev\env\env\myshop\lib\site-packages\braintree\configuration.py", line 85, in __init__
+    raise ConfigurationError("Missing merchant_id")
+braintree.exceptions.configuration_error.ConfigurationError: Missing merchant_id
+(myshop) PS C:\Users\romanpc\dev\env\env\myshop\myshop>

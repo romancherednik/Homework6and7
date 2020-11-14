@@ -1,0 +1,310 @@
+(educa) PS C:\Users\romanpc\dev\env\env\educa\educa> python manage.py runserver                                         Watching for file changes with StatReloader
+Performing system checks...
+
+System check identified no issues (0 silenced).
+November 12, 2020 - 00:25:56
+Django version 3.0.11, using settings 'educa.settings'
+Starting development server at http://127.0.0.1:8000/
+Quit the server with CTRL-BREAK.
+Not Found: /course/mine/
+[12/Nov/2020 00:26:00] "GET /course/mine/ HTTP/1.1" 404 2234
+Not Found: /course/
+[12/Nov/2020 00:26:02] "GET /course/ HTTP/1.1" 404 2219
+Not Found: /
+[12/Nov/2020 00:26:04] "GET / HTTP/1.1" 404 2180
+Not Found: /
+[12/Nov/2020 00:26:06] "GET / HTTP/1.1" 404 2180
+Not Found: /home
+[12/Nov/2020 00:26:09] "GET /home HTTP/1.1" 404 2210
+(educa) PS C:\Users\romanpc\dev\env\env\educa\educa> python manage.py runserver                                         Watching for file changes with StatReloader
+Performing system checks...
+
+System check identified no issues (0 silenced).
+November 12, 2020 - 00:28:37
+Django version 3.0.11, using settings 'educa.settings'
+Starting development server at http://127.0.0.1:8000/
+Quit the server with CTRL-BREAK.
+(educa) PS C:\Users\romanpc\dev\env\env\educa\educa> python manage.py startapp students                                 (educa) PS C:\Users\romanpc\dev\env\env\educa\educa> python manage.py runserver                                         Watching for file changes with StatReloader
+Exception in thread django-main-thread:
+Traceback (most recent call last):
+  File "c:\python38\lib\threading.py", line 932, in _bootstrap_inner
+    self.run()
+  File "c:\python38\lib\threading.py", line 870, in run
+    self._target(*self._args, **self._kwargs)
+  File "C:\Users\romanpc\dev\env\env\educa\lib\site-packages\django\utils\autoreload.py", line 53, in wrapper
+    fn(*args, **kwargs)
+  File "C:\Users\romanpc\dev\env\env\educa\lib\site-packages\django\core\management\commands\runserver.py", line 109, in inner_run
+    autoreload.raise_last_exception()
+  File "C:\Users\romanpc\dev\env\env\educa\lib\site-packages\django\utils\autoreload.py", line 76, in raise_last_exception
+    raise _exception[1]
+  File "C:\Users\romanpc\dev\env\env\educa\lib\site-packages\django\core\management\__init__.py", line 357, in execute
+    autoreload.check_errors(django.setup)()
+  File "C:\Users\romanpc\dev\env\env\educa\lib\site-packages\django\utils\autoreload.py", line 53, in wrapper
+    fn(*args, **kwargs)
+  File "C:\Users\romanpc\dev\env\env\educa\lib\site-packages\django\__init__.py", line 24, in setup
+    apps.populate(settings.INSTALLED_APPS)
+  File "C:\Users\romanpc\dev\env\env\educa\lib\site-packages\django\apps\registry.py", line 91, in populate
+    app_config = AppConfig.create(entry)
+  File "C:\Users\romanpc\dev\env\env\educa\lib\site-packages\django\apps\config.py", line 90, in create
+    module = import_module(entry)
+  File "c:\python38\lib\importlib\__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1014, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 991, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 973, in _find_and_load_unlocked
+ModuleNotFoundError: No module named 'embed_video'
+Traceback (most recent call last):
+  File "manage.py", line 21, in <module>
+    main()
+  File "manage.py", line 17, in main
+    execute_from_command_line(sys.argv)
+  File "C:\Users\romanpc\dev\env\env\educa\lib\site-packages\django\core\management\__init__.py", line 401, in execute_from_command_line
+    utility.execute()
+  File "C:\Users\romanpc\dev\env\env\educa\lib\site-packages\django\core\management\__init__.py", line 395, in execute
+    self.fetch_command(subcommand).run_from_argv(self.argv)
+  File "C:\Users\romanpc\dev\env\env\educa\lib\site-packages\django\core\management\base.py", line 328, in run_from_argv
+    self.execute(*args, **cmd_options)
+  File "C:\Users\romanpc\dev\env\env\educa\lib\site-packages\django\core\management\commands\runserver.py", line 60, in execute
+    super().execute(*args, **options)
+  File "C:\Users\romanpc\dev\env\env\educa\lib\site-packages\django\core\management\base.py", line 369, in execute
+    output = self.handle(*args, **options)
+  File "C:\Users\romanpc\dev\env\env\educa\lib\site-packages\django\core\management\commands\runserver.py", line 95, in handle
+    self.run(**options)
+  File "C:\Users\romanpc\dev\env\env\educa\lib\site-packages\django\core\management\commands\runserver.py", line 102, in run
+    autoreload.run_with_reloader(self.inner_run, **options)
+  File "C:\Users\romanpc\dev\env\env\educa\lib\site-packages\django\utils\autoreload.py", line 599, in run_with_reloader
+    start_django(reloader, main_func, *args, **kwargs)
+  File "C:\Users\romanpc\dev\env\env\educa\lib\site-packages\django\utils\autoreload.py", line 584, in start_django
+    reloader.run(django_main_thread)
+  File "C:\Users\romanpc\dev\env\env\educa\lib\site-packages\django\utils\autoreload.py", line 299, in run
+    self.run_loop()
+  File "C:\Users\romanpc\dev\env\env\educa\lib\site-packages\django\utils\autoreload.py", line 305, in run_loop
+    next(ticker)
+  File "C:\Users\romanpc\dev\env\env\educa\lib\site-packages\django\utils\autoreload.py", line 345, in tick
+    for filepath, mtime in self.snapshot_files():
+  File "C:\Users\romanpc\dev\env\env\educa\lib\site-packages\django\utils\autoreload.py", line 361, in snapshot_files
+    for file in self.watched_files():
+  File "C:\Users\romanpc\dev\env\env\educa\lib\site-packages\django\utils\autoreload.py", line 260, in watched_files
+    yield from iter_all_python_module_files()
+  File "C:\Users\romanpc\dev\env\env\educa\lib\site-packages\django\utils\autoreload.py", line 105, in iter_all_python_module_files
+    return iter_modules_and_files(modules, frozenset(_error_files))
+  File "C:\Users\romanpc\dev\env\env\educa\lib\site-packages\django\utils\autoreload.py", line 141, in iter_modules_and_files
+    resolved_path = path.resolve(strict=True).absolute()
+  File "c:\python38\lib\pathlib.py", line 1177, in resolve
+    s = self._flavour.resolve(self, strict=strict)
+  File "c:\python38\lib\pathlib.py", line 200, in resolve
+    return self._ext_to_normal(_getfinalpathname(s))
+OSError: [WinError 123] The filename, directory name, or volume label syntax is incorrect: '<frozen importlib._bootstrap>'
+(educa) PS C:\Users\romanpc\dev\env\env\educa\educa> python manage.py makemigrations                                    Entering debug mode. Use h or ? for help.
+
+At C:\Program Files\WindowsPowerShell\Modules\PSReadline\2.0.0\PSReadLine.psm1:5 char:1
++ }
++ ~
+(educa) PS C:\Users\romanpc\dev\env\env\educa\educa>>                                                                   (educa) PS C:\Users\romanpc\dev\env\env\educa\educa>> python manage.py makemigrations                                   python : Traceback (most recent call last):
+At line:1 char:1
++ python manage.py makemigrations
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (Traceback (most recent call last)::String) [], RemoteException
+    + FullyQualifiedErrorId : NativeCommandError
+
+  File "manage.py", line 21, in <module>
+    main()
+  File "manage.py", line 17, in main
+    execute_from_command_line(sys.argv)
+  File "C:\Users\romanpc\dev\env\env\educa\lib\site-packages\django\core\management\__init__.py", line 401, in
+execute_from_command_line
+    utility.execute()
+  File "C:\Users\romanpc\dev\env\env\educa\lib\site-packages\django\core\management\__init__.py", line 377, in execute
+    django.setup()
+  File "C:\Users\romanpc\dev\env\env\educa\lib\site-packages\django\__init__.py", line 24, in setup
+    apps.populate(settings.INSTALLED_APPS)
+  File "C:\Users\romanpc\dev\env\env\educa\lib\site-packages\django\apps\registry.py", line 91, in populate
+    app_config = AppConfig.create(entry)
+  File "C:\Users\romanpc\dev\env\env\educa\lib\site-packages\django\apps\config.py", line 90, in create
+    module = import_module(entry)
+  File "c:\python38\lib\importlib\__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1014, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 991, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 973, in _find_and_load_unlocked
+ModuleNotFoundError: No module named 'embed_video'
+(educa) PS C:\Users\romanpc\dev\env\env\educa\educa>> ls                                                                
+
+    Directory: C:\Users\romanpc\dev\env\env\educa\educa
+
+
+Mode                LastWriteTime         Length Name
+----                -------------         ------ ----
+d-----       11/12/2020  12:18 AM                courses
+d-----       11/11/2020  11:17 PM                educa
+d-----       11/12/2020  12:34 AM                students
+-a----       11/11/2020  11:40 PM         212992 db.sqlite3
+-a----       11/11/2020  11:12 PM            646 manage.py
+
+
+(educa) PS C:\Users\romanpc\dev\env\env\educa\educa>> python manage.py                                                  python : Traceback (most recent call last):
+At line:1 char:1
++ python manage.py
++ ~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (Traceback (most recent call last)::String) [], RemoteException
+    + FullyQualifiedErrorId : NativeCommandError
+
+  File "manage.py", line 21, in <module>
+    main()
+  File "manage.py", line 17, in main
+    execute_from_command_line(sys.argv)
+  File "C:\Users\romanpc\dev\env\env\educa\lib\site-packages\django\core\management\__init__.py", line 401, in
+execute_from_command_line
+    utility.execute()
+  File "C:\Users\romanpc\dev\env\env\educa\lib\site-packages\django\core\management\__init__.py", line 377, in execute
+    django.setup()
+  File "C:\Users\romanpc\dev\env\env\educa\lib\site-packages\django\__init__.py", line 24, in setup
+    apps.populate(settings.INSTALLED_APPS)
+  File "C:\Users\romanpc\dev\env\env\educa\lib\site-packages\django\apps\registry.py", line 91, in populate
+    app_config = AppConfig.create(entry)
+  File "C:\Users\romanpc\dev\env\env\educa\lib\site-packages\django\apps\config.py", line 90, in create
+    module = import_module(entry)
+  File "c:\python38\lib\importlib\__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1014, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 991, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 973, in _find_and_load_unlocked
+ModuleNotFoundError: No module named 'embed_video'
+(educa) PS C:\Users\romanpc\dev\env\env\educa\educa>> pip install django-embed-video==1.3.2                             Collecting django-embed-video==1.3.2
+  Downloading django_embed_video-1.3.2-py3-none-any.whl (24 kB)
+Collecting requests>=2.19
+  Using cached requests-2.25.0-py2.py3-none-any.whl (61 kB)
+Requirement already satisfied: Django>=1.11 in c:\users\romanpc\dev\env\env\educa\lib\site-packages (from django-embed-video==1.3.2) (3.0.11)
+Collecting certifi>=2017.4.17
+  Using cached certifi-2020.11.8-py2.py3-none-any.whl (155 kB)
+Collecting idna<3,>=2.5
+  Using cached idna-2.10-py2.py3-none-any.whl (58 kB)
+Collecting urllib3<1.27,>=1.21.1
+  Using cached urllib3-1.26.1-py2.py3-none-any.whl (136 kB)
+Collecting chardet<4,>=3.0.2
+  Using cached chardet-3.0.4-py2.py3-none-any.whl (133 kB)
+Requirement already satisfied: pytz in c:\users\romanpc\dev\env\env\educa\lib\site-packages (from Django>=1.11->django-embed-video==1.3.2) (2020.4)
+Requirement already satisfied: sqlparse>=0.2.2 in c:\users\romanpc\dev\env\env\educa\lib\site-packages (from Django>=1.11->django-embed-video==1.3.2) (0.4.1)
+Requirement already satisfied: asgiref~=3.2 in c:\users\romanpc\dev\env\env\educa\lib\site-packages (from Django>=1.11->django-embed-video==1.3.2) (3.3.1)
+Installing collected packages: certifi, idna, urllib3, chardet, requests, django-embed-video
+Successfully installed certifi-2020.11.8 chardet-3.0.4 django-embed-video-1.3.2 idna-2.10 requests-2.25.0 urllib3-1.26.1
+pip : WARNING: You are using pip version 20.2.2; however, version 20.2.4 is available.
+At line:1 char:1
++ pip install django-embed-video==1.3.2
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (WARNING: You ar...4 is available.:String) [], RemoteException
+    + FullyQualifiedErrorId : NativeCommandError
+
+You should consider upgrading via the 'C:\Users\romanpc\Dev\env\env\educa\Scripts\python.exe -m pip install --upgrade
+pip' command.
+(educa) PS C:\Users\romanpc\dev\env\env\educa\educa>> pip install --upgrade pip                                         Collecting pip
+  Using cached pip-20.2.4-py2.py3-none-any.whl (1.5 MB)
+Installing collected packages: pip
+  Attempting uninstall: pip
+    Found existing installation: pip 20.2.2
+    Uninstalling pip-20.2.2:
+      Successfully uninstalled pip-20.2.2
+pip : ERROR: Could not install packages due to an EnvironmentError: [WinError 5] Access is denied:
+'C:\\Users\\romanpc\\AppData\\Local\\Temp\\pip-uninstall-q0n3va4q\\pip.exe'
+At line:1 char:1
++ pip install --upgrade pip
++ ~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (ERROR: Could no...3va4q\\pip.exe':String) [], RemoteException
+    + FullyQualifiedErrorId : NativeCommandError
+
+Consider using the `--user` option or check the permissions.
+(educa) PS C:\Users\romanpc\dev\env\env\educa\educa>> pip install python-memcached==1.59                                Collecting python-memcached==1.59
+  Downloading python_memcached-1.59-py2.py3-none-any.whl (16 kB)
+Requirement already satisfied: six>=1.4.0 in c:\users\romanpc\dev\env\env\educa\lib\site-packages (from python-memcached==1.59) (1.15.0)
+Installing collected packages: python-memcached
+Successfully installed python-memcached-1.59
+(educa) PS C:\Users\romanpc\dev\env\env\educa\educa>> pip install django-memcache-status=2.2                            pip : ERROR: Invalid requirement: 'django-memcache-status=2.2'
+At line:1 char:1
++ pip install django-memcache-status=2.2
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (ERROR: Invalid ...che-status=2.2':String) [], RemoteException
+    + FullyQualifiedErrorId : NativeCommandError
+
+Hint: = is not a valid operator. Did you mean == ?
+(educa) PS C:\Users\romanpc\dev\env\env\educa\educa>> pip install django-memcache-status = 2.2                          pip : ERROR: Invalid requirement: '='
+At line:1 char:1
++ pip install django-memcache-status = 2.2
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (ERROR: Invalid requirement: '=':String) [], RemoteException
+    + FullyQualifiedErrorId : NativeCommandError
+
+Hint: = is not a valid operator. Did you mean == ?
+(educa) PS C:\Users\romanpc\dev\env\env\educa\educa>> pip install django-memcache-status==2.2                           Collecting django-memcache-status==2.2
+  Downloading django_memcache_status-2.2-py2.py3-none-any.whl (13 kB)
+Requirement already satisfied: django>=1.11 in c:\users\romanpc\dev\env\env\educa\lib\site-packages (from django-memcache-status==2.2) (3.0.11)
+Requirement already satisfied: six in c:\users\romanpc\dev\env\env\educa\lib\site-packages (from django-memcache-status==2.2) (1.15.0)
+Requirement already satisfied: sqlparse>=0.2.2 in c:\users\romanpc\dev\env\env\educa\lib\site-packages (from django>=1.11->django-memcache-status==2.2) (0.4.1)
+Requirement already satisfied: pytz in c:\users\romanpc\dev\env\env\educa\lib\site-packages (from django>=1.11->django-memcache-status==2.2) (2020.4)
+Requirement already satisfied: asgiref~=3.2 in c:\users\romanpc\dev\env\env\educa\lib\site-packages (from django>=1.11->django-memcache-status==2.2) (3.3.1)
+Installing collected packages: django-memcache-status
+Successfully installed django-memcache-status-2.2
+(educa) PS C:\Users\romanpc\dev\env\env\educa\educa>> python manage.py shell                                            python : Python 3.8.5 (tags/v3.8.5:580fbb0, Jul 20 2020, 15:57:54) [MSC v.1924 64 bit (AMD64)] on win32
+At line:1 char:1
++ python manage.py shell
++ ~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (Python 3.8.5 (t...MD64)] on win32:String) [], RemoteException
+    + FullyQualifiedErrorId : NativeCommandError
+
+Type "help", "copyright", "credits" or "license" for more information.
+(InteractiveConsole)
+v
+Traceback (most recent call last):
+  File "<console>", line 1, in <module>
+NameError: name 'v' is not defined
+f
+Traceback (most recent call last):
+  File "<console>", line 1, in <module>
+NameError: name 'f' is not defined
+f
+Traceback (most recent call last):
+  File "<console>", line 1, in <module>
+NameError: name 'f' is not defined
+
+exit()
+>>> >>> >>> >>> >>>
+(educa) PS C:\Users\romanpc\dev\env\env\educa\educa>> python manage.py shell                                            python : Python 3.8.5 (tags/v3.8.5:580fbb0, Jul 20 2020, 15:57:54) [MSC v.1924 64 bit (AMD64)] on win32
+At line:1 char:1
++ python manage.py shell
++ ~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (Python 3.8.5 (t...MD64)] on win32:String) [], RemoteException
+    + FullyQualifiedErrorId : NativeCommandError
+
+Type "help", "copyright", "credits" or "license" for more information.
+(InteractiveConsole)
+from django.core.cache import cache
+cache.set('musician', 'Django Reinhardt', 20)
+cache.get('musician')
+'Django Reinhardt'
+>>> >>> >>> >>> 'Django Reinhardt'
+from courses.models import Subject
+subjects = Subject.objects.all()
+cache.set('my_subjects', subjects)
+cache.get('my_subjects')
+QuerySet (<Subject: Mathematics>, <Subject: Music>, <Subject: Physics>, <Subject: Programming>]>
+  File "<console>", line 1
+    QuerySet (<Subject: Mathematics>, <Subject: Music>, <Subject: Physics>, <Subject: Programming>]>
+              ^
+SyntaxError: invalid syntax
+QuerySet [(<Subject: Mathematics>, <Subject: Music>, <Subject: Physics>, <Subject: Programming>]>
+  File "<console>", line 1
+    QuerySet [(<Subject: Mathematics>, <Subject: Music>, <Subject: Physics>, <Subject: Programming>]>
+               ^
+SyntaxError: invalid syntax
+QuerySet [<Subject: Mathematics>, <Subject: Music>, <Subject: Physics>, <Subject: Programming>]>
+  File "<console>", line 1
+    QuerySet [<Subject: Mathematics>, <Subject: Music>, <Subject: Physics>, <Subject: Programming>]>
+              ^
+SyntaxError: invalid syntax
+exit()
+>>> >>> >>> >>> >>> >>> >>> >>>
+(educa) PS C:\Users\romanpc\dev\env\env\educa\educa>> python manage.py runserver                                        python : Watching for file changes with StatReloader
+At line:1 char:1
++ python manage.py runserver
++ ~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : NotSpecified: (Watching for fi...th StatReloader:String) [], RemoteException
+    + FullyQualifiedErrorId : NativeCommandError

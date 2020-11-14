@@ -1,0 +1,7 @@
+skipping part on customer orders in chapter 7 - won't be useful to my idea or project (page 281)
+Not worrying about saving orders into my database. Also installed Celery as required in the chapter but went through
+setup steps and actually using Celery but ultimately decided to skip this because again, it isn't relevant to my idea
+or project (nor will it really be useful anywhere else besides chapter 7)
+
+
+

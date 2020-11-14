@@ -1,0 +1,1026 @@
+Windows PowerShell
+Copyright (C) Microsoft Corporation. All rights reserved.
+
+Try the new cross-platform PowerShell https://aka.ms/pscore6
+
+PS C:\Users\romanpc> cd dev
+PS C:\Users\romanpc\dev> ls
+
+
+    Directory: C:\Users\romanpc\dev
+
+
+Mode                LastWriteTime         Length Name
+----                -------------         ------ ----
+d-----         9/8/2020  10:21 PM                cfehome
+d-----       10/18/2020   2:59 PM                env
+d-----       10/12/2020   7:56 PM                GitHub
+d-----       10/12/2020   7:58 PM                GitHub - Copy
+d-----       10/18/2020   2:45 PM                GithubBookmarksStuff
+-a----       10/18/2020   2:40 PM        9320687 CIDM6325-master.zip
+-a----       10/18/2020   3:31 PM        2932090 Django-3-by-Example-master.zip
+-a----       10/12/2020   8:00 PM       31648439 GitHub - Assignment 4.5.rar
+
+
+PS C:\Users\romanpc\dev> cd env
+PS C:\Users\romanpc\dev\env> ls
+
+
+    Directory: C:\Users\romanpc\dev\env
+
+
+Mode                LastWriteTime         Length Name
+----                -------------         ------ ----
+d-----       11/11/2020   4:38 PM                env
+
+
+PS C:\Users\romanpc\dev\env> cd env
+PS C:\Users\romanpc\dev\env\env> ls
+
+
+    Directory: C:\Users\romanpc\dev\env\env
+
+
+Mode                LastWriteTime         Length Name
+----                -------------         ------ ----
+d-----       10/18/2020   9:34 PM                bookmarks
+d-----       11/11/2020  10:46 PM                myshop
+-a----       10/18/2020  10:43 PM       25056012 bookmarks.zip
+
+
+PS C:\Users\romanpc\dev\env\env> mkdir educa
+
+
+    Directory: C:\Users\romanpc\dev\env\env
+
+
+Mode                LastWriteTime         Length Name
+----                -------------         ------ ----
+d-----       11/11/2020  11:09 PM                educa
+
+
+PS C:\Users\romanpc\dev\env\env> ls
+
+
+    Directory: C:\Users\romanpc\dev\env\env
+
+
+Mode                LastWriteTime         Length Name
+----                -------------         ------ ----
+d-----       10/18/2020   9:34 PM                bookmarks
+d-----       11/11/2020  11:09 PM                educa
+d-----       11/11/2020  10:46 PM                myshop
+-a----       10/18/2020  10:43 PM       25056012 bookmarks.zip
+
+
+PS C:\Users\romanpc\dev\env\env> cd educa
+PS C:\Users\romanpc\dev\env\env\educa> virtualenv
+usage: virtualenv [--version] [--with-traceback] [-v | -q] [--app-data APP_DATA] [--reset-app-data] [--upgrade-embed-wheels] [--discovery {builtin}] [-p py] [--creator {builtin,cpython3-win,venv}] [--seeder {app-data,pip}] [--no-seed]
+                  [--activators comma_sep_list] [--clear] [--system-site-packages] [--copies] [--no-download | --download] [--extra-search-dir d [d ...]] [--pip version] [--setuptools version] [--wheel version] [--no-pip] [--no-setuptools]
+                  [--no-wheel] [--no-periodic-update] [--symlink-app-data] [--prompt prompt] [-h]
+                  dest
+virtualenv: error: the following arguments are required: dest
+SystemExit: 2
+PS C:\Users\romanpc\dev\env\env\educa> virtualenv .
+created virtual environment CPython3.8.5.final.0-64 in 3056ms
+  creator CPython3Windows(dest=C:\Users\romanpc\Dev\env\env\educa, clear=False, global=False)
+  seeder FromAppData(download=False, pip=bundle, setuptools=bundle, wheel=bundle, via=copy, app_data_dir=C:\Users\romanpc\AppData\Local\pypa\virtualenv)
+    added seed packages: pip==20.2.2, setuptools==50.2.0, wheel==0.35.1
+  activators BashActivator,BatchActivator,FishActivator,PowerShellActivator,PythonActivator,XonshActivator
+PS C:\Users\romanpc\dev\env\env\educa> ls
+
+
+    Directory: C:\Users\romanpc\dev\env\env\educa
+
+
+Mode                LastWriteTime         Length Name
+----                -------------         ------ ----
+d-----       11/11/2020  11:09 PM                Lib
+d-----       11/11/2020  11:10 PM                Scripts
+-a----       11/11/2020  11:09 PM             42 .gitignore
+-a----       11/11/2020  11:10 PM            237 pyvenv.cfg
+
+
+PS C:\Users\romanpc\dev\env\env\educa> cd Scripts
+PS C:\Users\romanpc\dev\env\env\educa\Scripts> ls
+
+
+    Directory: C:\Users\romanpc\dev\env\env\educa\Scripts
+
+
+Mode                LastWriteTime         Length Name
+----                -------------         ------ ----
+-a----       11/11/2020  11:10 PM           2311 activate
+-a----       11/11/2020  11:10 PM           1067 activate.bat
+-a----       11/11/2020  11:10 PM           3177 activate.fish
+-a----       11/11/2020  11:10 PM           1815 activate.ps1
+-a----       11/11/2020  11:10 PM           1214 activate.xsh
+-a----       11/11/2020  11:10 PM           1225 activate_this.py
+-a----       11/11/2020  11:10 PM            529 deactivate.bat
+-a----       11/11/2020  11:10 PM         106373 easy_install-3.8.exe
+-a----       11/11/2020  11:10 PM         106373 easy_install.exe
+-a----       11/11/2020  11:10 PM         106373 easy_install3.8.exe
+-a----       11/11/2020  11:10 PM         106373 easy_install3.exe
+-a----       11/11/2020  11:09 PM        3399200 libcrypto-1_1.dll
+-a----       11/11/2020  11:09 PM          32792 libffi-7.dll
+-a----       11/11/2020  11:09 PM         689184 libssl-1_1.dll
+-a----       11/11/2020  11:10 PM         106364 pip-3.8.exe
+-a----       11/11/2020  11:10 PM         106364 pip.exe
+-a----       11/11/2020  11:10 PM         106364 pip3.8.exe
+-a----       11/11/2020  11:10 PM         106364 pip3.exe
+-a----       11/11/2020  11:10 PM             25 pydoc.bat
+-a----       11/11/2020  11:09 PM         189000 pyexpat.pyd
+-a----       11/11/2020  11:09 PM         100424 python.exe
+-a----       11/11/2020  11:09 PM          58952 python3.dll
+-a----       11/11/2020  11:09 PM        4209224 python38.dll
+-a----       11/11/2020  11:09 PM          98888 pythonw.exe
+-a----       11/11/2020  11:09 PM          26696 select.pyd
+-a----       11/11/2020  11:09 PM        1475656 sqlite3.dll
+-a----       11/11/2020  11:09 PM        1705120 tcl86t.dll
+-a----       11/11/2020  11:09 PM        1468064 tk86t.dll
+-a----       11/11/2020  11:09 PM        1096264 unicodedata.pyd
+-a----       11/11/2020  11:09 PM         101664 vcruntime140.dll
+-a----       11/11/2020  11:09 PM          44328 vcruntime140_1.dll
+-a----       11/11/2020  11:10 PM         106351 wheel-3.8.exe
+-a----       11/11/2020  11:10 PM         106351 wheel.exe
+-a----       11/11/2020  11:10 PM         106351 wheel3.8.exe
+-a----       11/11/2020  11:10 PM         106351 wheel3.exe
+-a----       11/11/2020  11:09 PM          29256 winsound.pyd
+-a----       11/11/2020  11:09 PM          63560 _asyncio.pyd
+-a----       11/11/2020  11:09 PM          86088 _bz2.pyd
+-a----       11/11/2020  11:09 PM         126024 _ctypes.pyd
+-a----       11/11/2020  11:09 PM          33352 _ctypes_test.pyd
+-a----       11/11/2020  11:09 PM         266824 _decimal.pyd
+-a----       11/11/2020  11:09 PM         177224 _elementtree.pyd
+-a----       11/11/2020  11:09 PM          46152 _hashlib.pyd
+-a----       11/11/2020  11:09 PM         162376 _lzma.pyd
+-a----       11/11/2020  11:09 PM          38984 _msi.pyd
+-a----       11/11/2020  11:09 PM          29256 _multiprocessing.pyd
+-a----       11/11/2020  11:09 PM          45640 _overlapped.pyd
+-a----       11/11/2020  11:09 PM          28232 _queue.pyd
+-a----       11/11/2020  11:09 PM          78920 _socket.pyd
+-a----       11/11/2020  11:09 PM          87624 _sqlite3.pyd
+-a----       11/11/2020  11:09 PM         153672 _ssl.pyd
+-a----       11/11/2020  11:09 PM          54856 _testbuffer.pyd
+-a----       11/11/2020  11:09 PM         113224 _testcapi.pyd
+-a----       11/11/2020  11:09 PM          24136 _testconsole.pyd
+-a----       11/11/2020  11:09 PM          22088 _testimportmultiple.pyd
+-a----       11/11/2020  11:09 PM          31816 _testmultiphase.pyd
+-a----       11/11/2020  11:09 PM          64072 _tkinter.pyd
+
+
+PS C:\Users\romanpc\dev\env\env\educa\Scripts> activate
+activate : The term 'activate' is not recognized as the name of a cmdlet, function, script file, or operable program.
+Check the spelling of the name, or if a path was included, verify that the path is correct and try again.
+At line:1 char:1
++ activate
++ ~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (activate:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+
+
+Suggestion [3,General]: The command activate was not found, but does exist in the current location. Windows PowerShell does not load commands from the current location by default. If you trust this command, instead type: ".\activate". See "get-help about_Command_Precedence" for more details.
+PS C:\Users\romanpc\dev\env\env\educa\Scripts> cd ..
+PS C:\Users\romanpc\dev\env\env\educa> ls
+
+
+    Directory: C:\Users\romanpc\dev\env\env\educa
+
+
+Mode                LastWriteTime         Length Name
+----                -------------         ------ ----
+d-----       11/11/2020  11:09 PM                Lib
+d-----       11/11/2020  11:10 PM                Scripts
+-a----       11/11/2020  11:09 PM             42 .gitignore
+-a----       11/11/2020  11:10 PM            237 pyvenv.cfg
+
+
+PS C:\Users\romanpc\dev\env\env\educa> ./Scripts/activate
+(educa) PS C:\Users\romanpc\dev\env\env\educa> pip install "Django==3.0.*"
+Collecting Django==3.0.*
+  Using cached Django-3.0.11-py3-none-any.whl (7.5 MB)
+Collecting pytz
+  Using cached pytz-2020.4-py2.py3-none-any.whl (509 kB)
+Collecting sqlparse>=0.2.2
+  Using cached sqlparse-0.4.1-py3-none-any.whl (42 kB)
+Collecting asgiref~=3.2
+  Using cached asgiref-3.3.1-py3-none-any.whl (19 kB)
+Installing collected packages: pytz, sqlparse, asgiref, Django
+Successfully installed Django-3.0.11 asgiref-3.3.1 pytz-2020.4 sqlparse-0.4.1
+WARNING: You are using pip version 20.2.2; however, version 20.2.4 is available.
+You should consider upgrading via the 'C:\Users\romanpc\Dev\env\env\educa\Scripts\python.exe -m pip install --upgrade pip' command.
+(educa) PS C:\Users\romanpc\dev\env\env\educa> pip install Pillow==7.0.0
+Collecting Pillow==7.0.0
+  Using cached Pillow-7.0.0-cp38-cp38-win_amd64.whl (2.0 MB)
+Installing collected packages: Pillow
+Successfully installed Pillow-7.0.0
+WARNING: You are using pip version 20.2.2; however, version 20.2.4 is available.
+You should consider upgrading via the 'C:\Users\romanpc\Dev\env\env\educa\Scripts\python.exe -m pip install --upgrade pip' command.
+(educa) PS C:\Users\romanpc\dev\env\env\educa> django-admin startproject educa
+(educa) PS C:\Users\romanpc\dev\env\env\educa> ls
+
+
+    Directory: C:\Users\romanpc\dev\env\env\educa
+
+
+Mode                LastWriteTime         Length Name
+----                -------------         ------ ----
+d-----       11/11/2020  11:12 PM                educa
+d-----       11/11/2020  11:09 PM                Lib
+d-----       11/11/2020  11:11 PM                Scripts
+-a----       11/11/2020  11:09 PM             42 .gitignore
+-a----       11/11/2020  11:10 PM            237 pyvenv.cfg
+
+
+(educa) PS C:\Users\romanpc\dev\env\env\educa> cd educa
+(educa) PS C:\Users\romanpc\dev\env\env\educa\educa> django-admin startapp courses
+(educa) PS C:\Users\romanpc\dev\env\env\educa\educa> python manage.py makemigrations
+Traceback (most recent call last):
+  File "manage.py", line 21, in <module>
+    main()
+  File "manage.py", line 17, in main
+    execute_from_command_line(sys.argv)
+  File "C:\Users\romanpc\dev\env\env\educa\lib\site-packages\django\core\management\__init__.py", line 401, in execute_from_command_line
+    utility.execute()
+  File "C:\Users\romanpc\dev\env\env\educa\lib\site-packages\django\core\management\__init__.py", line 377, in execute
+    django.setup()
+  File "C:\Users\romanpc\dev\env\env\educa\lib\site-packages\django\__init__.py", line 24, in setup
+    apps.populate(settings.INSTALLED_APPS)
+  File "C:\Users\romanpc\dev\env\env\educa\lib\site-packages\django\apps\registry.py", line 114, in populate
+    app_config.import_models()
+  File "C:\Users\romanpc\dev\env\env\educa\lib\site-packages\django\apps\config.py", line 211, in import_models
+    self.models_module = import_module(models_module_name)
+  File "c:\python38\lib\importlib\__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1014, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 991, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 975, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 671, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 783, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "C:\Users\romanpc\dev\env\env\educa\educa\courses\models.py", line 32, in <module>
+    class Module(models.Model):
+  File "C:\Users\romanpc\dev\env\env\educa\educa\courses\models.py", line 38, in Module
+    order = OrderField(blank=True, for_fields=['course'])
+NameError: name 'OrderField' is not defined
+(educa) PS C:\Users\romanpc\dev\env\env\educa\educa> ls
+
+
+    Directory: C:\Users\romanpc\dev\env\env\educa\educa
+
+
+Mode                LastWriteTime         Length Name
+----                -------------         ------ ----
+d-----       11/11/2020  11:17 PM                courses
+d-----       11/11/2020  11:17 PM                educa
+-a----       11/11/2020  11:12 PM            646 manage.py
+
+
+(educa) PS C:\Users\romanpc\dev\env\env\educa\educa> python manage.py makemigrations
+Traceback (most recent call last):
+  File "manage.py", line 21, in <module>
+    main()
+  File "manage.py", line 17, in main
+    execute_from_command_line(sys.argv)
+  File "C:\Users\romanpc\dev\env\env\educa\lib\site-packages\django\core\management\__init__.py", line 401, in execute_from_command_line
+    utility.execute()
+  File "C:\Users\romanpc\dev\env\env\educa\lib\site-packages\django\core\management\__init__.py", line 377, in execute
+    django.setup()
+  File "C:\Users\romanpc\dev\env\env\educa\lib\site-packages\django\__init__.py", line 24, in setup
+    apps.populate(settings.INSTALLED_APPS)
+  File "C:\Users\romanpc\dev\env\env\educa\lib\site-packages\django\apps\registry.py", line 114, in populate
+    app_config.import_models()
+  File "C:\Users\romanpc\dev\env\env\educa\lib\site-packages\django\apps\config.py", line 211, in import_models
+    self.models_module = import_module(models_module_name)
+  File "c:\python38\lib\importlib\__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1014, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 991, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 975, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 671, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 783, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "C:\Users\romanpc\dev\env\env\educa\educa\courses\models.py", line 32, in <module>
+    class Module(models.Model):
+  File "C:\Users\romanpc\dev\env\env\educa\educa\courses\models.py", line 38, in Module
+    order = OrderField(blank=True, for_fields=['course'])
+NameError: name 'OrderField' is not defined
+(educa) PS C:\Users\romanpc\dev\env\env\educa\educa> python manage.py makemigrations
+Traceback (most recent call last):
+  File "manage.py", line 21, in <module>
+    main()
+  File "manage.py", line 17, in main
+    execute_from_command_line(sys.argv)
+  File "C:\Users\romanpc\dev\env\env\educa\lib\site-packages\django\core\management\__init__.py", line 401, in execute_from_command_line
+    utility.execute()
+  File "C:\Users\romanpc\dev\env\env\educa\lib\site-packages\django\core\management\__init__.py", line 377, in execute
+    django.setup()
+  File "C:\Users\romanpc\dev\env\env\educa\lib\site-packages\django\__init__.py", line 24, in setup
+    apps.populate(settings.INSTALLED_APPS)
+  File "C:\Users\romanpc\dev\env\env\educa\lib\site-packages\django\apps\registry.py", line 114, in populate
+    app_config.import_models()
+  File "C:\Users\romanpc\dev\env\env\educa\lib\site-packages\django\apps\config.py", line 211, in import_models
+    self.models_module = import_module(models_module_name)
+  File "c:\python38\lib\importlib\__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1014, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 991, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 975, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 671, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 783, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "C:\Users\romanpc\dev\env\env\educa\educa\courses\models.py", line 32, in <module>
+    class Module(models.Model):
+  File "C:\Users\romanpc\dev\env\env\educa\educa\courses\models.py", line 38, in Module
+    order = OrderField(blank=True, for_fields=['course'])
+NameError: name 'OrderField' is not defined
+(educa) PS C:\Users\romanpc\dev\env\env\educa\educa> python manage.py makemigrations
+Traceback (most recent call last):
+  File "manage.py", line 21, in <module>
+    main()
+  File "manage.py", line 17, in main
+    execute_from_command_line(sys.argv)
+  File "C:\Users\romanpc\dev\env\env\educa\lib\site-packages\django\core\management\__init__.py", line 401, in execute_from_command_line
+    utility.execute()
+  File "C:\Users\romanpc\dev\env\env\educa\lib\site-packages\django\core\management\__init__.py", line 377, in execute
+    django.setup()
+  File "C:\Users\romanpc\dev\env\env\educa\lib\site-packages\django\__init__.py", line 24, in setup
+    apps.populate(settings.INSTALLED_APPS)
+  File "C:\Users\romanpc\dev\env\env\educa\lib\site-packages\django\apps\registry.py", line 114, in populate
+    app_config.import_models()
+  File "C:\Users\romanpc\dev\env\env\educa\lib\site-packages\django\apps\config.py", line 211, in import_models
+    self.models_module = import_module(models_module_name)
+  File "c:\python38\lib\importlib\__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1014, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 991, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 975, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 671, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 783, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "C:\Users\romanpc\dev\env\env\educa\educa\courses\models.py", line 32, in <module>
+    class Module(models.Model):
+  File "C:\Users\romanpc\dev\env\env\educa\educa\courses\models.py", line 38, in Module
+    order = OrderField(blank=True, for_fields=['course'])
+NameError: name 'OrderField' is not defined
+(educa) PS C:\Users\romanpc\dev\env\env\educa\educa> python manage.py makemigrations
+Migrations for 'courses':
+  courses\migrations\0001_initial.py
+    - Create model Course
+    - Create model Subject
+    - Create model Module
+    - Add field subject to course
+(educa) PS C:\Users\romanpc\dev\env\env\educa\educa> python manage.py migrate
+Operations to perform:
+  Apply all migrations: admin, auth, contenttypes, courses, sessions
+Running migrations:
+  Applying contenttypes.0001_initial... OK
+  Applying auth.0001_initial... OK
+  Applying admin.0001_initial... OK
+  Applying admin.0002_logentry_remove_auto_add... OK
+  Applying admin.0003_logentry_add_action_flag_choices... OK
+  Applying contenttypes.0002_remove_content_type_name... OK
+  Applying auth.0002_alter_permission_name_max_length... OK
+  Applying auth.0003_alter_user_email_max_length... OK
+  Applying auth.0004_alter_user_username_opts... OK
+  Applying auth.0005_alter_user_last_login_null... OK
+  Applying auth.0006_require_contenttypes_0002... OK
+  Applying auth.0007_alter_validators_add_error_messages... OK
+  Applying auth.0008_alter_user_username_max_length... OK
+  Applying auth.0009_alter_user_last_name_max_length... OK
+  Applying auth.0010_alter_group_name_max_length... OK
+  Applying auth.0011_update_proxy_permissions... OK
+  Applying courses.0001_initial... OK
+  Applying sessions.0001_initial... OK
+(educa) PS C:\Users\romanpc\dev\env\env\educa\educa> python manage.py createsuperuser
+Username (leave blank to use 'romanpc'):
+Email address:
+Password:
+Password (again):
+Superuser created successfully.
+(educa) PS C:\Users\romanpc\dev\env\env\educa\educa> python manage.py runserver
+Watching for file changes with StatReloader
+Performing system checks...
+
+System check identified no issues (0 silenced).
+November 11, 2020 - 23:21:00
+Django version 3.0.11, using settings 'educa.settings'
+Starting development server at http://127.0.0.1:8000/
+Quit the server with CTRL-BREAK.
+[11/Nov/2020 23:21:05] "GET / HTTP/1.1" 200 16351
+[11/Nov/2020 23:21:05] "GET /static/admin/css/fonts.css HTTP/1.1" 200 423
+[11/Nov/2020 23:21:05] "GET /static/admin/fonts/Roboto-Bold-webfont.woff HTTP/1.1" 200 86184
+[11/Nov/2020 23:21:06] "GET /static/admin/fonts/Roboto-Regular-webfont.woff HTTP/1.1" 200 85876
+[11/Nov/2020 23:21:06] "GET /static/admin/fonts/Roboto-Light-webfont.woff HTTP/1.1" 200 85692
+(educa) PS C:\Users\romanpc\dev\env\env\educa\educa> python manage.py dumpdata courses --indent=2
+[
+]
+(educa) PS C:\Users\romanpc\dev\env\env\educa\educa> ls
+
+
+    Directory: C:\Users\romanpc\dev\env\env\educa\educa
+
+
+Mode                LastWriteTime         Length Name
+----                -------------         ------ ----
+d-----       11/11/2020  11:17 PM                courses
+d-----       11/11/2020  11:17 PM                educa
+-a----       11/11/2020  11:20 PM         163840 db.sqlite3
+-a----       11/11/2020  11:12 PM            646 manage.py
+
+
+(educa) PS C:\Users\romanpc\dev\env\env\educa\educa> cd courses
+(educa) PS C:\Users\romanpc\dev\env\env\educa\educa\courses> mkdir fixtures
+
+
+    Directory: C:\Users\romanpc\dev\env\env\educa\educa\courses
+
+
+Mode                LastWriteTime         Length Name
+----                -------------         ------ ----
+d-----       11/11/2020  11:24 PM                fixtures
+
+
+(educa) PS C:\Users\romanpc\dev\env\env\educa\educa\courses> ls
+
+
+    Directory: C:\Users\romanpc\dev\env\env\educa\educa\courses
+
+
+Mode                LastWriteTime         Length Name
+----                -------------         ------ ----
+d-----       11/11/2020  11:24 PM                fixtures
+d-----       11/11/2020  11:19 PM                migrations
+d-----       11/11/2020  11:20 PM                __pycache__
+-a----       11/11/2020  11:20 PM            580 admin.py
+-a----       11/11/2020  11:12 PM             94 apps.py
+-a----       11/11/2020  11:19 PM           1290 models.py
+-a----       11/11/2020  11:12 PM             63 tests.py
+-a----       11/11/2020  11:12 PM             66 views.py
+-a----       11/11/2020  11:12 PM              0 __init__.py
+
+
+(educa) PS C:\Users\romanpc\dev\env\env\educa\educa\courses> python manage.py dumpdata courses --indent=2 --output=fixtures/subjects.json
+C:\Users\romanpc\dev\env\env\educa/Scripts\python.exe: can't open file 'manage.py': [Errno 2] No such file or directory
+(educa) PS C:\Users\romanpc\dev\env\env\educa\educa\courses> ls
+
+
+    Directory: C:\Users\romanpc\dev\env\env\educa\educa\courses
+
+
+Mode                LastWriteTime         Length Name
+----                -------------         ------ ----
+d-----       11/11/2020  11:24 PM                fixtures
+d-----       11/11/2020  11:19 PM                migrations
+d-----       11/11/2020  11:20 PM                __pycache__
+-a----       11/11/2020  11:20 PM            580 admin.py
+-a----       11/11/2020  11:12 PM             94 apps.py
+-a----       11/11/2020  11:19 PM           1290 models.py
+-a----       11/11/2020  11:12 PM             63 tests.py
+-a----       11/11/2020  11:12 PM             66 views.py
+-a----       11/11/2020  11:12 PM              0 __init__.py
+
+
+(educa) PS C:\Users\romanpc\dev\env\env\educa\educa\courses> cd ..
+(educa) PS C:\Users\romanpc\dev\env\env\educa\educa> python manage.py dumpdata courses --indent=2 --output=fixtures/subjects.json
+CommandError: Unable to serialize database: [Errno 2] No such file or directory: 'fixtures/subjects.json'
+(educa) PS C:\Users\romanpc\dev\env\env\educa\educa> python manage.py dumpdata courses --indent=2 --output=courses/fixtures/subjects.json
+(educa) PS C:\Users\romanpc\dev\env\env\educa\educa> python manage.py loaddata subjects.json
+C:\Users\romanpc\dev\env\env\educa\lib\site-packages\django\core\management\commands\loaddata.py:211: RuntimeWarning: No fixture data found for 'subjects'. (File format may be invalid.)
+  warnings.warn(
+Installed 0 object(s) from 1 fixture(s)
+(educa) PS C:\Users\romanpc\dev\env\env\educa\educa> python manage.py loaddata subjects.json
+Traceback (most recent call last):
+  File "manage.py", line 21, in <module>
+    main()
+  File "manage.py", line 17, in main
+    execute_from_command_line(sys.argv)
+  File "C:\Users\romanpc\dev\env\env\educa\lib\site-packages\django\core\management\__init__.py", line 401, in execute_from_command_line
+    utility.execute()
+  File "C:\Users\romanpc\dev\env\env\educa\lib\site-packages\django\core\management\__init__.py", line 377, in execute
+    django.setup()
+  File "C:\Users\romanpc\dev\env\env\educa\lib\site-packages\django\__init__.py", line 24, in setup
+    apps.populate(settings.INSTALLED_APPS)
+  File "C:\Users\romanpc\dev\env\env\educa\lib\site-packages\django\apps\registry.py", line 114, in populate
+    app_config.import_models()
+  File "C:\Users\romanpc\dev\env\env\educa\lib\site-packages\django\apps\config.py", line 211, in import_models
+    self.models_module = import_module(models_module_name)
+  File "c:\python38\lib\importlib\__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1014, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 991, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 975, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 671, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 783, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "C:\Users\romanpc\dev\env\env\educa\educa\courses\models.py", line 5, in <module>
+    from .fields import OrderField
+ModuleNotFoundError: No module named 'courses.fields'
+(educa) PS C:\Users\romanpc\dev\env\env\educa\educa> python manage.py makemigrations                                    Traceback (most recent call last):
+  File "manage.py", line 21, in <module>
+    main()
+  File "manage.py", line 17, in main
+    execute_from_command_line(sys.argv)
+  File "C:\Users\romanpc\dev\env\env\educa\lib\site-packages\django\core\management\__init__.py", line 401, in execute_from_command_line
+    utility.execute()
+  File "C:\Users\romanpc\dev\env\env\educa\lib\site-packages\django\core\management\__init__.py", line 377, in execute
+    django.setup()
+  File "C:\Users\romanpc\dev\env\env\educa\lib\site-packages\django\__init__.py", line 24, in setup
+    apps.populate(settings.INSTALLED_APPS)
+  File "C:\Users\romanpc\dev\env\env\educa\lib\site-packages\django\apps\registry.py", line 114, in populate
+    app_config.import_models()
+  File "C:\Users\romanpc\dev\env\env\educa\lib\site-packages\django\apps\config.py", line 211, in import_models
+    self.models_module = import_module(models_module_name)
+  File "c:\python38\lib\importlib\__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1014, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 991, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 975, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 671, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 783, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "C:\Users\romanpc\dev\env\env\educa\educa\courses\models.py", line 5, in <module>
+    from .fields import OrderField
+ModuleNotFoundError: No module named 'courses.fields'
+(educa) PS C:\Users\romanpc\dev\env\env\educa\educa> python manage.py makemigrations
+Traceback (most recent call last):
+  File "manage.py", line 21, in <module>
+    main()
+  File "manage.py", line 17, in main
+    execute_from_command_line(sys.argv)
+  File "C:\Users\romanpc\dev\env\env\educa\lib\site-packages\django\core\management\__init__.py", line 401, in execute_from_command_line
+    utility.execute()
+  File "C:\Users\romanpc\dev\env\env\educa\lib\site-packages\django\core\management\__init__.py", line 377, in execute
+    django.setup()
+  File "C:\Users\romanpc\dev\env\env\educa\lib\site-packages\django\__init__.py", line 24, in setup
+    apps.populate(settings.INSTALLED_APPS)
+  File "C:\Users\romanpc\dev\env\env\educa\lib\site-packages\django\apps\registry.py", line 114, in populate
+    app_config.import_models()
+  File "C:\Users\romanpc\dev\env\env\educa\lib\site-packages\django\apps\config.py", line 211, in import_models
+    self.models_module = import_module(models_module_name)
+  File "c:\python38\lib\importlib\__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1014, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 991, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 975, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 671, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 783, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "C:\Users\romanpc\dev\env\env\educa\educa\courses\models.py", line 38, in <module>
+    class Module(models.Model):
+  File "C:\Users\romanpc\dev\env\env\educa\educa\courses\models.py", line 44, in Module
+    order = OrderField(blank=True, for_fields=['course'])
+NameError: name 'OrderField' is not defined
+(educa) PS C:\Users\romanpc\dev\env\env\educa\educa> python manage.py makemigrations
+Traceback (most recent call last):
+  File "manage.py", line 21, in <module>
+    main()
+  File "manage.py", line 17, in main
+    execute_from_command_line(sys.argv)
+  File "C:\Users\romanpc\dev\env\env\educa\lib\site-packages\django\core\management\__init__.py", line 401, in execute_from_command_line
+    utility.execute()
+  File "C:\Users\romanpc\dev\env\env\educa\lib\site-packages\django\core\management\__init__.py", line 377, in execute
+    django.setup()
+  File "C:\Users\romanpc\dev\env\env\educa\lib\site-packages\django\__init__.py", line 24, in setup
+    apps.populate(settings.INSTALLED_APPS)
+  File "C:\Users\romanpc\dev\env\env\educa\lib\site-packages\django\apps\registry.py", line 114, in populate
+    app_config.import_models()
+  File "C:\Users\romanpc\dev\env\env\educa\lib\site-packages\django\apps\config.py", line 211, in import_models
+    self.models_module = import_module(models_module_name)
+  File "c:\python38\lib\importlib\__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1014, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 991, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 975, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 671, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 783, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "C:\Users\romanpc\dev\env\env\educa\educa\courses\models.py", line 53, in <module>
+    class Content(models.Model):
+  File "C:\Users\romanpc\dev\env\env\educa\educa\courses\models.py", line 66, in Content
+    order = OrderField(blank=True, for_fields=['module'])
+NameError: name 'OrderField' is not defined
+(educa) PS C:\Users\romanpc\dev\env\env\educa\educa> python manage.py makemigrations
+SystemCheckError: System check identified some issues:
+
+ERRORS:
+courses.Content: (models.E015) 'ordering' refers to the nonexistent field, related field, or lookup 'order'.
+courses.Module: (models.E015) 'ordering' refers to the nonexistent field, related field, or lookup 'order'.
+(educa) PS C:\Users\romanpc\dev\env\env\educa\educa> python manage.py makemigrations
+Traceback (most recent call last):
+  File "manage.py", line 21, in <module>
+    main()
+  File "manage.py", line 17, in main
+    execute_from_command_line(sys.argv)
+  File "C:\Users\romanpc\dev\env\env\educa\lib\site-packages\django\core\management\__init__.py", line 401, in execute_from_command_line
+    utility.execute()
+  File "C:\Users\romanpc\dev\env\env\educa\lib\site-packages\django\core\management\__init__.py", line 377, in execute
+    django.setup()
+  File "C:\Users\romanpc\dev\env\env\educa\lib\site-packages\django\__init__.py", line 24, in setup
+    apps.populate(settings.INSTALLED_APPS)
+  File "C:\Users\romanpc\dev\env\env\educa\lib\site-packages\django\apps\registry.py", line 114, in populate
+    app_config.import_models()
+  File "C:\Users\romanpc\dev\env\env\educa\lib\site-packages\django\apps\config.py", line 211, in import_models
+    self.models_module = import_module(models_module_name)
+  File "c:\python38\lib\importlib\__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1014, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 991, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 975, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 671, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 779, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 916, in get_code
+  File "<frozen importlib._bootstrap_external>", line 846, in source_to_code
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "C:\Users\romanpc\dev\env\env\educa\educa\courses\models.py", line 15
+    def __str__(self):
+    ^
+IndentationError: expected an indented block
+(educa) PS C:\Users\romanpc\dev\env\env\educa\educa> python manage.py makemigrations
+SystemCheckError: System check identified some issues:
+
+ERRORS:
+courses.Content: (models.E015) 'ordering' refers to the nonexistent field, related field, or lookup 'order'.
+courses.Module: (models.E015) 'ordering' refers to the nonexistent field, related field, or lookup 'order'.
+(educa) PS C:\Users\romanpc\dev\env\env\educa\educa> python manage.py makemigrations courses
+You are trying to add a non-nullable field 'order' to module without a default; we can't do that (the database needs something to populate existing rows).
+Please select a fix:
+ 1) Provide a one-off default now (will be set on all existing rows with a null value for this column)
+ 2) Quit, and let me add a default in models.py
+Select an option: 1
+Please enter the default value now, as valid Python
+The datetime and django.utils.timezone modules are available, so you can do e.g. timezone.now
+Type 'exit' to exit this prompt
+>>> 0
+Migrations for 'courses':
+  courses\migrations\0002_auto_20201111_2340.py
+    - Change Meta options on module
+    - Add field order to module
+    - Create model Video
+    - Create model Text
+    - Create model Image
+    - Create model File
+    - Create model Content
+(educa) PS C:\Users\romanpc\dev\env\env\educa\educa> manage.py migrate
+manage.py : The term 'manage.py' is not recognized as the name of a cmdlet, function, script file, or operable
+program. Check the spelling of the name, or if a path was included, verify that the path is correct and try again.
+At line:1 char:1
++ manage.py migrate
++ ~~~~~~~~~
+    + CategoryInfo          : ObjectNotFound: (manage.py:String) [], CommandNotFoundException
+    + FullyQualifiedErrorId : CommandNotFoundException
+
+
+Suggestion [3,General]: The command manage.py was not found, but does exist in the current location. Windows PowerShell does not load commands from the current location by default. If you trust this command, instead type: ".\manage.py". See "get-help about_Command_Precedence" for more details.
+(educa) PS C:\Users\romanpc\dev\env\env\educa\educa> python manage.py migrate
+Operations to perform:
+  Apply all migrations: admin, auth, contenttypes, courses, sessions
+Running migrations:
+  Applying courses.0002_auto_20201111_2340... OK
+(educa) PS C:\Users\romanpc\dev\env\env\educa\educa> python manage.py shell
+Python 3.8.5 (tags/v3.8.5:580fbb0, Jul 20 2020, 15:57:54) [MSC v.1924 64 bit (AMD64)] on win32
+Type "help", "copyright", "credits" or "license" for more information.
+(InteractiveConsole)
+>>> from django.contrib.auth.models import User
+>>> from courses.models import Subject, Course, Module
+>>> user = User.objects.last()
+>>> subject = Subject.objects.last()
+>>> cl = Course.objects.create(subject=subject, owner=user, title='Course l', slug='coursel')
+Traceback (most recent call last):
+  File "C:\Users\romanpc\dev\env\env\educa\lib\site-packages\django\db\backends\utils.py", line 86, in _execute
+    return self.cursor.execute(sql, params)
+  File "C:\Users\romanpc\dev\env\env\educa\lib\site-packages\django\db\backends\sqlite3\base.py", line 396, in execute
+    return Database.Cursor.execute(self, query, params)
+sqlite3.IntegrityError: NOT NULL constraint failed: courses_course.subject_id
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "<console>", line 1, in <module>
+  File "C:\Users\romanpc\dev\env\env\educa\lib\site-packages\django\db\models\manager.py", line 82, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "C:\Users\romanpc\dev\env\env\educa\lib\site-packages\django\db\models\query.py", line 433, in create
+    obj.save(force_insert=True, using=self.db)
+  File "C:\Users\romanpc\dev\env\env\educa\lib\site-packages\django\db\models\base.py", line 748, in save
+    self.save_base(using=using, force_insert=force_insert,
+  File "C:\Users\romanpc\dev\env\env\educa\lib\site-packages\django\db\models\base.py", line 785, in save_base
+    updated = self._save_table(
+  File "C:\Users\romanpc\dev\env\env\educa\lib\site-packages\django\db\models\base.py", line 890, in _save_table
+    results = self._do_insert(cls._base_manager, using, fields, returning_fields, raw)
+  File "C:\Users\romanpc\dev\env\env\educa\lib\site-packages\django\db\models\base.py", line 927, in _do_insert
+    return manager._insert(
+  File "C:\Users\romanpc\dev\env\env\educa\lib\site-packages\django\db\models\manager.py", line 82, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "C:\Users\romanpc\dev\env\env\educa\lib\site-packages\django\db\models\query.py", line 1204, in _insert
+    return query.get_compiler(using=using).execute_sql(returning_fields)
+  File "C:\Users\romanpc\dev\env\env\educa\lib\site-packages\django\db\models\sql\compiler.py", line 1394, in execute_sql
+    cursor.execute(sql, params)
+  File "C:\Users\romanpc\dev\env\env\educa\lib\site-packages\django\db\backends\utils.py", line 100, in execute
+    return super().execute(sql, params)
+  File "C:\Users\romanpc\dev\env\env\educa\lib\site-packages\django\db\backends\utils.py", line 68, in execute
+    return self._execute_with_wrappers(sql, params, many=False, executor=self._execute)
+  File "C:\Users\romanpc\dev\env\env\educa\lib\site-packages\django\db\backends\utils.py", line 77, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "C:\Users\romanpc\dev\env\env\educa\lib\site-packages\django\db\backends\utils.py", line 86, in _execute
+    return self.cursor.execute(sql, params)
+  File "C:\Users\romanpc\dev\env\env\educa\lib\site-packages\django\db\utils.py", line 90, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "C:\Users\romanpc\dev\env\env\educa\lib\site-packages\django\db\backends\utils.py", line 86, in _execute
+    return self.cursor.execute(sql, params)
+  File "C:\Users\romanpc\dev\env\env\educa\lib\site-packages\django\db\backends\sqlite3\base.py", line 396, in execute
+    return Database.Cursor.execute(self, query, params)
+django.db.utils.IntegrityError: NOT NULL constraint failed: courses_course.subject_id
+>>> c1 = Course.objects.create(subject=subject, owner=user, title='Course 1', slug='course1')
+Traceback (most recent call last):
+  File "C:\Users\romanpc\dev\env\env\educa\lib\site-packages\django\db\backends\utils.py", line 86, in _execute
+    return self.cursor.execute(sql, params)
+  File "C:\Users\romanpc\dev\env\env\educa\lib\site-packages\django\db\backends\sqlite3\base.py", line 396, in execute
+    return Database.Cursor.execute(self, query, params)
+sqlite3.IntegrityError: NOT NULL constraint failed: courses_course.subject_id
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "<console>", line 1, in <module>
+  File "C:\Users\romanpc\dev\env\env\educa\lib\site-packages\django\db\models\manager.py", line 82, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "C:\Users\romanpc\dev\env\env\educa\lib\site-packages\django\db\models\query.py", line 433, in create
+    obj.save(force_insert=True, using=self.db)
+  File "C:\Users\romanpc\dev\env\env\educa\lib\site-packages\django\db\models\base.py", line 748, in save
+    self.save_base(using=using, force_insert=force_insert,
+  File "C:\Users\romanpc\dev\env\env\educa\lib\site-packages\django\db\models\base.py", line 785, in save_base
+    updated = self._save_table(
+  File "C:\Users\romanpc\dev\env\env\educa\lib\site-packages\django\db\models\base.py", line 890, in _save_table
+    results = self._do_insert(cls._base_manager, using, fields, returning_fields, raw)
+  File "C:\Users\romanpc\dev\env\env\educa\lib\site-packages\django\db\models\base.py", line 927, in _do_insert
+    return manager._insert(
+  File "C:\Users\romanpc\dev\env\env\educa\lib\site-packages\django\db\models\manager.py", line 82, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "C:\Users\romanpc\dev\env\env\educa\lib\site-packages\django\db\models\query.py", line 1204, in _insert
+    return query.get_compiler(using=using).execute_sql(returning_fields)
+  File "C:\Users\romanpc\dev\env\env\educa\lib\site-packages\django\db\models\sql\compiler.py", line 1394, in execute_sql
+    cursor.execute(sql, params)
+  File "C:\Users\romanpc\dev\env\env\educa\lib\site-packages\django\db\backends\utils.py", line 100, in execute
+    return super().execute(sql, params)
+  File "C:\Users\romanpc\dev\env\env\educa\lib\site-packages\django\db\backends\utils.py", line 68, in execute
+    return self._execute_with_wrappers(sql, params, many=False, executor=self._execute)
+  File "C:\Users\romanpc\dev\env\env\educa\lib\site-packages\django\db\backends\utils.py", line 77, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "C:\Users\romanpc\dev\env\env\educa\lib\site-packages\django\db\backends\utils.py", line 86, in _execute
+    return self.cursor.execute(sql, params)
+  File "C:\Users\romanpc\dev\env\env\educa\lib\site-packages\django\db\utils.py", line 90, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "C:\Users\romanpc\dev\env\env\educa\lib\site-packages\django\db\backends\utils.py", line 86, in _execute
+    return self.cursor.execute(sql, params)
+  File "C:\Users\romanpc\dev\env\env\educa\lib\site-packages\django\db\backends\sqlite3\base.py", line 396, in execute
+    return Database.Cursor.execute(self, query, params)
+django.db.utils.IntegrityError: NOT NULL constraint failed: courses_course.subject_id
+>>> m1 = Module.objects.create(course=c1, title='Module 1')
+Traceback (most recent call last):
+  File "<console>", line 1, in <module>
+NameError: name 'c1' is not defined
+>>> m1.order
+Traceback (most recent call last):
+  File "<console>", line 1, in <module>
+NameError: name 'm1' is not defined
+>>> c2 = Course.objects.create(subject=subject, title='Course 2', slug='course2', owner=user)
+Traceback (most recent call last):
+  File "C:\Users\romanpc\dev\env\env\educa\lib\site-packages\django\db\backends\utils.py", line 86, in _execute
+    return self.cursor.execute(sql, params)
+  File "C:\Users\romanpc\dev\env\env\educa\lib\site-packages\django\db\backends\sqlite3\base.py", line 396, in execute
+    return Database.Cursor.execute(self, query, params)
+sqlite3.IntegrityError: NOT NULL constraint failed: courses_course.subject_id
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "<console>", line 1, in <module>
+  File "C:\Users\romanpc\dev\env\env\educa\lib\site-packages\django\db\models\manager.py", line 82, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "C:\Users\romanpc\dev\env\env\educa\lib\site-packages\django\db\models\query.py", line 433, in create
+    obj.save(force_insert=True, using=self.db)
+  File "C:\Users\romanpc\dev\env\env\educa\lib\site-packages\django\db\models\base.py", line 748, in save
+    self.save_base(using=using, force_insert=force_insert,
+  File "C:\Users\romanpc\dev\env\env\educa\lib\site-packages\django\db\models\base.py", line 785, in save_base
+    updated = self._save_table(
+  File "C:\Users\romanpc\dev\env\env\educa\lib\site-packages\django\db\models\base.py", line 890, in _save_table
+    results = self._do_insert(cls._base_manager, using, fields, returning_fields, raw)
+  File "C:\Users\romanpc\dev\env\env\educa\lib\site-packages\django\db\models\base.py", line 927, in _do_insert
+    return manager._insert(
+  File "C:\Users\romanpc\dev\env\env\educa\lib\site-packages\django\db\models\manager.py", line 82, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "C:\Users\romanpc\dev\env\env\educa\lib\site-packages\django\db\models\query.py", line 1204, in _insert
+    return query.get_compiler(using=using).execute_sql(returning_fields)
+  File "C:\Users\romanpc\dev\env\env\educa\lib\site-packages\django\db\models\sql\compiler.py", line 1394, in execute_sql
+    cursor.execute(sql, params)
+  File "C:\Users\romanpc\dev\env\env\educa\lib\site-packages\django\db\backends\utils.py", line 100, in execute
+    return super().execute(sql, params)
+  File "C:\Users\romanpc\dev\env\env\educa\lib\site-packages\django\db\backends\utils.py", line 68, in execute
+    return self._execute_with_wrappers(sql, params, many=False, executor=self._execute)
+  File "C:\Users\romanpc\dev\env\env\educa\lib\site-packages\django\db\backends\utils.py", line 77, in _execute_with_wrappers
+    return executor(sql, params, many, context)
+  File "C:\Users\romanpc\dev\env\env\educa\lib\site-packages\django\db\backends\utils.py", line 86, in _execute
+    return self.cursor.execute(sql, params)
+  File "C:\Users\romanpc\dev\env\env\educa\lib\site-packages\django\db\utils.py", line 90, in __exit__
+    raise dj_exc_value.with_traceback(traceback) from exc_value
+  File "C:\Users\romanpc\dev\env\env\educa\lib\site-packages\django\db\backends\utils.py", line 86, in _execute
+    return self.cursor.execute(sql, params)
+  File "C:\Users\romanpc\dev\env\env\educa\lib\site-packages\django\db\backends\sqlite3\base.py", line 396, in execute
+    return Database.Cursor.execute(self, query, params)
+django.db.utils.IntegrityError: NOT NULL constraint failed: courses_course.subject_id
+>>> exit()
+(educa) PS C:\Users\romanpc\dev\env\env\educa\educa> python manage.py runserver
+Watching for file changes with StatReloader
+Performing system checks...
+
+Exception in thread django-main-thread:
+Traceback (most recent call last):
+  File "c:\python38\lib\threading.py", line 932, in _bootstrap_inner
+    self.run()
+  File "c:\python38\lib\threading.py", line 870, in run
+    self._target(*self._args, **self._kwargs)
+  File "C:\Users\romanpc\dev\env\env\educa\lib\site-packages\django\utils\autoreload.py", line 53, in wrapper
+    fn(*args, **kwargs)
+  File "C:\Users\romanpc\dev\env\env\educa\lib\site-packages\django\core\management\commands\runserver.py", line 117, in inner_run
+    self.check(display_num_errors=True)
+  File "C:\Users\romanpc\dev\env\env\educa\lib\site-packages\django\core\management\base.py", line 392, in check
+    all_issues = self._run_checks(
+  File "C:\Users\romanpc\dev\env\env\educa\lib\site-packages\django\core\management\base.py", line 382, in _run_checks
+    return checks.run_checks(**kwargs)
+  File "C:\Users\romanpc\dev\env\env\educa\lib\site-packages\django\core\checks\registry.py", line 72, in run_checks
+    new_errors = check(app_configs=app_configs)
+  File "C:\Users\romanpc\dev\env\env\educa\lib\site-packages\django\core\checks\urls.py", line 13, in check_url_config
+    return check_resolver(resolver)
+  File "C:\Users\romanpc\dev\env\env\educa\lib\site-packages\django\core\checks\urls.py", line 23, in check_resolver
+    return check_method()
+  File "C:\Users\romanpc\dev\env\env\educa\lib\site-packages\django\urls\resolvers.py", line 407, in check
+    for pattern in self.url_patterns:
+  File "C:\Users\romanpc\dev\env\env\educa\lib\site-packages\django\utils\functional.py", line 48, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "C:\Users\romanpc\dev\env\env\educa\lib\site-packages\django\urls\resolvers.py", line 588, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "C:\Users\romanpc\dev\env\env\educa\lib\site-packages\django\utils\functional.py", line 48, in __get__
+    res = instance.__dict__[self.name] = self.func(instance)
+  File "C:\Users\romanpc\dev\env\env\educa\lib\site-packages\django\urls\resolvers.py", line 581, in urlconf_module
+    return import_module(self.urlconf_name)
+  File "c:\python38\lib\importlib\__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1014, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 991, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 975, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 671, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 783, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "C:\Users\romanpc\dev\env\env\educa\educa\educa\urls.py", line 9, in <module>
+    path('course/', include('courses.urls')),
+  File "C:\Users\romanpc\dev\env\env\educa\lib\site-packages\django\urls\conf.py", line 34, in include
+    urlconf_module = import_module(urlconf_module)
+  File "c:\python38\lib\importlib\__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1014, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 991, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 973, in _find_and_load_unlocked
+ModuleNotFoundError: No module named 'courses.urls'
+Traceback (most recent call last):
+  File "manage.py", line 21, in <module>
+    main()
+  File "manage.py", line 17, in main
+    execute_from_command_line(sys.argv)
+  File "C:\Users\romanpc\dev\env\env\educa\lib\site-packages\django\core\management\__init__.py", line 401, in execute_from_command_line
+    utility.execute()
+  File "C:\Users\romanpc\dev\env\env\educa\lib\site-packages\django\core\management\__init__.py", line 395, in execute
+    self.fetch_command(subcommand).run_from_argv(self.argv)
+  File "C:\Users\romanpc\dev\env\env\educa\lib\site-packages\django\core\management\base.py", line 328, in run_from_argv
+    self.execute(*args, **cmd_options)
+  File "C:\Users\romanpc\dev\env\env\educa\lib\site-packages\django\core\management\commands\runserver.py", line 60, in execute
+    super().execute(*args, **options)
+  File "C:\Users\romanpc\dev\env\env\educa\lib\site-packages\django\core\management\base.py", line 369, in execute
+    output = self.handle(*args, **options)
+  File "C:\Users\romanpc\dev\env\env\educa\lib\site-packages\django\core\management\commands\runserver.py", line 95, in handle
+    self.run(**options)
+  File "C:\Users\romanpc\dev\env\env\educa\lib\site-packages\django\core\management\commands\runserver.py", line 102, in run
+    autoreload.run_with_reloader(self.inner_run, **options)
+  File "C:\Users\romanpc\dev\env\env\educa\lib\site-packages\django\utils\autoreload.py", line 599, in run_with_reloader
+    start_django(reloader, main_func, *args, **kwargs)
+  File "C:\Users\romanpc\dev\env\env\educa\lib\site-packages\django\utils\autoreload.py", line 584, in start_django
+    reloader.run(django_main_thread)
+  File "C:\Users\romanpc\dev\env\env\educa\lib\site-packages\django\utils\autoreload.py", line 299, in run
+    self.run_loop()
+  File "C:\Users\romanpc\dev\env\env\educa\lib\site-packages\django\utils\autoreload.py", line 305, in run_loop
+    next(ticker)
+  File "C:\Users\romanpc\dev\env\env\educa\lib\site-packages\django\utils\autoreload.py", line 345, in tick
+    for filepath, mtime in self.snapshot_files():
+  File "C:\Users\romanpc\dev\env\env\educa\lib\site-packages\django\utils\autoreload.py", line 361, in snapshot_files
+    for file in self.watched_files():
+  File "C:\Users\romanpc\dev\env\env\educa\lib\site-packages\django\utils\autoreload.py", line 260, in watched_files
+    yield from iter_all_python_module_files()
+  File "C:\Users\romanpc\dev\env\env\educa\lib\site-packages\django\utils\autoreload.py", line 105, in iter_all_python_module_files
+    return iter_modules_and_files(modules, frozenset(_error_files))
+  File "C:\Users\romanpc\dev\env\env\educa\lib\site-packages\django\utils\autoreload.py", line 141, in iter_modules_and_files
+    resolved_path = path.resolve(strict=True).absolute()
+  File "c:\python38\lib\pathlib.py", line 1177, in resolve
+    s = self._flavour.resolve(self, strict=strict)
+  File "c:\python38\lib\pathlib.py", line 200, in resolve
+    return self._ext_to_normal(_getfinalpathname(s))
+OSError: [WinError 123] The filename, directory name, or volume label syntax is incorrect: '<frozen importlib._bootstrap>'
+(educa) PS C:\Users\romanpc\dev\env\env\educa\educa> python manage.py runserver
+Watching for file changes with StatReloader
+Performing system checks...
+
+System check identified no issues (0 silenced).
+November 11, 2020 - 23:53:40
+Django version 3.0.11, using settings 'educa.settings'
+Starting development server at http://127.0.0.1:8000/
+Quit the server with CTRL-BREAK.
+Not Found: /
+[11/Nov/2020 23:53:46] "GET / HTTP/1.1" 404 2180
+(educa) PS C:\Users\romanpc\dev\env\env\educa\educa> python manage.py runserver
+Watching for file changes with StatReloader
+Performing system checks...
+
+System check identified no issues (0 silenced).
+November 11, 2020 - 23:58:49
+Django version 3.0.11, using settings 'educa.settings'
+Starting development server at http://127.0.0.1:8000/
+Quit the server with CTRL-BREAK.
+Not Found: /
+[11/Nov/2020 23:58:56] "GET / HTTP/1.1" 404 2180
+Not Found: /
+[11/Nov/2020 23:58:57] "GET / HTTP/1.1" 404 2180
+(educa) PS C:\Users\romanpc\dev\env\env\educa\educa> python manage.py runserver
+Watching for file changes with StatReloader
+Performing system checks...
+
+System check identified no issues (0 silenced).
+November 12, 2020 - 00:02:51
+Django version 3.0.11, using settings 'educa.settings'
+Starting development server at http://127.0.0.1:8000/
+Quit the server with CTRL-BREAK.
+Not Found: /
+[12/Nov/2020 00:02:56] "GET / HTTP/1.1" 404 2180
+(educa) PS C:\Users\romanpc\dev\env\env\educa\educa> python manage.py runserver
+Watching for file changes with StatReloader
+Performing system checks...
+
+System check identified no issues (0 silenced).
+November 12, 2020 - 00:07:42
+Django version 3.0.11, using settings 'educa.settings'
+Starting development server at http://127.0.0.1:8000/
+Quit the server with CTRL-BREAK.
+Not Found: /course/mine/
+[12/Nov/2020 00:07:45] "GET /course/mine/ HTTP/1.1" 404 2234
+Not Found: /course/mine/
+[12/Nov/2020 00:10:35] "GET /course/mine/ HTTP/1.1" 404 2234
+(educa) PS C:\Users\romanpc\dev\env\env\educa\educa> python manage.py shell
+Python 3.8.5 (tags/v3.8.5:580fbb0, Jul 20 2020, 15:57:54) [MSC v.1924 64 bit (AMD64)] on win32
+Type "help", "copyright", "credits" or "license" for more information.
+(InteractiveConsole)
+>>> from courses.models import Module
+>>> Module.objects.latest('id').id
+Traceback (most recent call last):
+  File "<console>", line 1, in <module>
+  File "C:\Users\romanpc\dev\env\env\educa\lib\site-packages\django\db\models\manager.py", line 82, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "C:\Users\romanpc\dev\env\env\educa\lib\site-packages\django\db\models\query.py", line 660, in latest
+    return self.reverse()._earliest(*fields)
+  File "C:\Users\romanpc\dev\env\env\educa\lib\site-packages\django\db\models\query.py", line 654, in _earliest
+    return obj.get()
+  File "C:\Users\romanpc\dev\env\env\educa\lib\site-packages\django\db\models\query.py", line 415, in get
+    raise self.model.DoesNotExist(
+courses.models.Module.DoesNotExist: Module matching query does not exist.
+>>> Module.objects.latest('id'),id
+Traceback (most recent call last):
+  File "<console>", line 1, in <module>
+  File "C:\Users\romanpc\dev\env\env\educa\lib\site-packages\django\db\models\manager.py", line 82, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "C:\Users\romanpc\dev\env\env\educa\lib\site-packages\django\db\models\query.py", line 660, in latest
+    return self.reverse()._earliest(*fields)
+  File "C:\Users\romanpc\dev\env\env\educa\lib\site-packages\django\db\models\query.py", line 654, in _earliest
+    return obj.get()
+  File "C:\Users\romanpc\dev\env\env\educa\lib\site-packages\django\db\models\query.py", line 415, in get
+    raise self.model.DoesNotExist(
+courses.models.Module.DoesNotExist: Module matching query does not exist.
+>>> exit()
+(educa) PS C:\Users\romanpc\dev\env\env\educa\educa> python manage.py runserver
+Watching for file changes with StatReloader
+Performing system checks...
+
+System check identified no issues (0 silenced).
+November 12, 2020 - 00:19:32
+Django version 3.0.11, using settings 'educa.settings'
+Starting development server at http://127.0.0.1:8000/
+Quit the server with CTRL-BREAK.
+(educa) PS C:\Users\romanpc\dev\env\env\educa\educa> pip install django-braces==1.14.0
+Collecting django-braces==1.14.0
+  Downloading django_braces-1.14.0-py2.py3-none-any.whl (14 kB)
+Requirement already satisfied: Django>=1.11.0 in c:\users\romanpc\dev\env\env\educa\lib\site-packages (from django-braces==1.14.0) (3.0.11)
+Collecting six
+  Using cached six-1.15.0-py2.py3-none-any.whl (10 kB)
+Requirement already satisfied: asgiref~=3.2 in c:\users\romanpc\dev\env\env\educa\lib\site-packages (from Django>=1.11.0->django-braces==1.14.0) (3.3.1)
+Requirement already satisfied: sqlparse>=0.2.2 in c:\users\romanpc\dev\env\env\educa\lib\site-packages (from Django>=1.11.0->django-braces==1.14.0) (0.4.1)
+Requirement already satisfied: pytz in c:\users\romanpc\dev\env\env\educa\lib\site-packages (from Django>=1.11.0->django-braces==1.14.0) (2020.4)
+Installing collected packages: six, django-braces
+Successfully installed django-braces-1.14.0 six-1.15.0
+WARNING: You are using pip version 20.2.2; however, version 20.2.4 is available.
+You should consider upgrading via the 'C:\Users\romanpc\Dev\env\env\educa\Scripts\python.exe -m pip install --upgrade pip' command.
+(educa) PS C:\Users\romanpc\dev\env\env\educa\educa>
